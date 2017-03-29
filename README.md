@@ -6,6 +6,7 @@ This readme will grow, as we fulfill pull requests.
 So partly is about merge "code" branches in Git and GitHub across people, as well as not messing up each persons "notes".
 
 This readme will serve as our "shared" location for Learning Resources.
+OK, so I have some clean up on which ones we have done, and when, and which we have not.
 
 ## NodeJS
 Links to Node tutorials here
@@ -20,12 +21,15 @@ This is the conman / ContactList repos
 [Learn to Build Modern Web Apps with MEAN](https://thinkster.io/tutorials/mean-stack) This is the 14-part Thinkster that builds the reddit clone
 
 
-
+[PostgreSQL and NodeJS](http://mherman.org/blog/2015/02/12/postgresql-and-nodejs/#.WNvZB28rLIV) ~ CRUD todo single page application with Node 6.6, Express 4.13, Angular 1.5, and PostgreSQL. *mherman's*
 
 
 
 ## Angular 2
 Links to Angular 2 tutorials here
+
+[mix & match any frontend tutorial with any backend tutorial](https://thinkster.io/tutorials/fullstack) Thinkster's 
+
 
 
 ## TypeScript 2
@@ -34,6 +38,19 @@ Links to TypeScript 2 tutorials here
 [Building a MEAN (MongoDB, ExpressJs, Angular and Node.js) api app using TypeScript and host it with Heroku](https://zimmergren.net/building-a-mean-mongodb-expressjs-angular-and-node-js-api-app-using-typescript-and-host-it-with-heroku/) Zimmergren's 
 
 [Developing a superhero-api with Node, Express and TypeScript2](http://mherman.org/blog/2016/11/05/developing-a-restful-api-with-node-and-typescript/#.WNvUZG8rLIU) Michael Herman's
+
+[Building a REST Service with Node.JS, DocumentDb, and TypeScript](https://www.joshcarlisle.io/blog/2017/3/1/building-a-rest-service-with-nodejs-documentdb-and-typescript)
+
+
+![](http://brianflove.com/images/banners/2016/typescript-2-express-mongoose-mocha-chai.jpg)
+This guys stuff is good, and since I am using his knowledge, and sharing it, I figure fair use on his image. It's his. 
+[TypeScript 2 + Express + Node.js](http://brianflove.com/2016/11/08/typescript-2-express-node/) Brian Love's
+
+Here is my [repo for the TS2, Express and Node app](https://github.com/gokemon/heros) ~
+[https://github.com/gokemon/heros](https://github.com/gokemon/heros)
+
+[TypeScript 2 + Express + Mongoose + Mocha + Chai](http://brianflove.com/2016/11/11/typescript-2-express-mongoose-mocha-chai/) EVEN BETTER
+
 
 
 ## Other Groups
