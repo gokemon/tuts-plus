@@ -32,6 +32,8 @@ Links to Angular 2 tutorials here
 
 [mix & match any frontend tutorial with any backend tutorial](https://thinkster.io/tutorials/fullstack) Thinkster's 
 
+[https://scotch.io/tutorials/interactive-angular-2-charts-with-zingchart](https://scotch.io/tutorials/interactive-angular-2-charts-with-zingchart)
+
 
 
 ## TypeScript 2
@@ -59,6 +61,16 @@ Here is my [repo for the TS2, Express and Node app](https://github.com/gokemon/h
 
 ### Gulp & webpack
 Links to tutorials here
+
+[https://scotch.io/tutorials/getting-started-with-webpack-module-bundling-magic](https://scotch.io/tutorials/getting-started-with-webpack-module-bundling-magic)
+
+**Docker**
+
+[https://scotch.io/tutorials/create-a-mean-app-with-angular-2-and-docker-compose](https://scotch.io/tutorials/create-a-mean-app-with-angular-2-and-docker-compose)
+
+[https://scotch.io/tutorials/debugging-angular-2-apps-with-augury](https://scotch.io/tutorials/debugging-angular-2-apps-with-augury)
+
+[https://scotch.io/tutorials/debug-a-node-app-inside-of-visual-studio-code](https://scotch.io/tutorials/debug-a-node-app-inside-of-visual-studio-code)
 
 ### Mongo & mongoose
 Links to tutorials here
