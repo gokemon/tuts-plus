@@ -8,6 +8,8 @@ So partly is about merge "code" branches in Git and GitHub across people, as wel
 This readme will serve as our "shared" location for Learning Resources.
 OK, so I have some clean up on which ones we have done, and when, and which we have not.
 
+https://leanpub.com/mean-machine
+
 ## NodeJS
 Links to Node tutorials here
 
@@ -61,6 +63,12 @@ Links to tutorials here
 ### Mongo & mongoose
 Links to tutorials here
 
+[Object Modeling in Node with Mongoose](https://devcenter.heroku.com/articles/nodejs-mongoose) Heroku
+
+[Easily Develop Node and MongoDB Apps with Mongoose](https://scotch.io/tutorials/using-mongoosejs-in-node-js-and-mongodb-applications) Scotch.IO
+
+[http://stackoverflow.com/questions/5747806/what-is-the-killer-reason-for-using-mongoose-orm](http://stackoverflow.com/questions/5747806/what-is-the-killer-reason-for-using-mongoose-orm)
+
 
 ### CSS styling(SASS & Bootstrap, etc)
 Links to tutorials here
@@ -69,6 +77,10 @@ Links to tutorials here
 
 ### Other Topics
 Steps for doing GitHub push & pull requests and merges
+
+
+[How to Host a MEAN Stack App on Digital Ocean](https://scotch.io/tutorials/how-to-host-a-mean-stack-app-on-digital-ocean)
+
 
 
 
