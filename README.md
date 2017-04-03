@@ -10,7 +10,7 @@ OK, so I have some clean up on which ones we have done, and when, and which we h
 
 https://leanpub.com/mean-machine
 
-![NodeJS](https://github.com/gokemon/tuts-plus/blob/master/images/Node-small.png)## NodeJS 
+![NodeJS](https://github.com/gokemon/tuts-plus/blob/master/images/Node-small.png) ## NodeJS 
 Links to Node tutorials here
 
 [Easily Develop Node.js and MongoDB Apps with Mongoose](https://scotch.io/tutorials/using-mongoosejs-in-node-js-and-mongodb-applications) Scotch.IO
@@ -108,7 +108,7 @@ TypeScript, debuggers, unit tests, code quality tool( SonarQube)
 
 Write better code
 
-#### Beer Locker
+### Beer Locker
 
 1. [Beer Locker: Building a RESTful API With Node](http://scottksmith.com/blog/2014/05/02/building-restful-apis-with-node/)
 1. CRUD
@@ -119,7 +119,7 @@ Write better code
 
 
 
-#### Twitatron
+### Twitatron
 
 1. [Building a Production Web App With Node](http://scottksmith.com/blog/2014/10/05/twitatron-building-a-production-web-app-with-node/)
 1. [Views & Controllers](http://scottksmith.com/blog/2015/03/23/twitatron-building-a-production-web-app-with-node-views-and-controllers/)
