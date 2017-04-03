@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)http://brianflove.com/2016/11/11/typescript-2-express-mongoose-mocha-chai/ -->
+<html class="gr__brianflove_com mdl-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>TypeScript 2 + Express + Mongoose + Mocha + Chai | Brian Love</title>
+  <meta name="description" content="MongoDB is an excellent choice for persisting data for your web application that uses the Express engine on Node.js.">
+  <link rel="shortcut icon" type="image/x-icon" href="http://brianflove.com/favicon.ico">
+  <link rel="canonical" href="http://0.0.7.224/11/11/typescript-2-express-mongoose-mocha-chai/">
+  <link rel="alternate" type="application/rss+xml" title="Brian Love" href="http://feed.xml/">
+  
+  <link rel="stylesheet" href="./TypeScript 2 + Express + Mongoose + Mocha + Chai _ Brian Love_files/main.css">
+
+<link rel="stylesheet" href="./TypeScript 2 + Express + Mongoose + Mocha + Chai _ Brian Love_files/prism-okaidia.css">
+<script type="text/javascript" async="" src="./TypeScript 2 + Express + Mongoose + Mocha + Chai _ Brian Love_files/ga.js.download"></script><script async="" src="./TypeScript 2 + Express + Mongoose + Mocha + Chai _ Brian Love_files/analytics.js.download"></script><script src="./TypeScript 2 + Express + Mongoose + Mocha + Chai _ Brian Love_files/embed.js.download" data-timestamp="1490885409341"></script></head>
+
+  <body class="mdl-base" data-gr-c-s-loaded="true">
+    <div class="mdl-layout__container"><div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header has-drawer is-upgraded" data-upgraded=",MaterialLayout">
+      <header class="mdl-layout__header mdl-layout--small-screen-only is-casting-shadow"><div aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button mdl-layout--large-screen-only"><i class="material-icons"></i></div>
+  <div class="mdl-layout__header-row">
+    <span class="mdl-layout-title">
+      <a href="http://brianflove.com/">Brian Love</a>
+    </span>
+    <div class="mdl-layout-spacer"></div>
+    <nav class="mdl-navigation">
+      
+        
+        
+        
+          <a href="http://brianflove.com/" class="mdl-navigation__link posts">Posts</a>
+        
+      
+        
+        
+        
+          <a href="http://brianflove.com/about-me" class="mdl-navigation__link about-me">About Me</a>
+        
+      
+        
+        
+        
+          <a href="http://brianflove.com/hire-me" class="mdl-navigation__link hire-me">Hire Me</a>
+        
+      
+        
+        
+        
+          <a href="http://brianflove.com/resume" class="mdl-navigation__link resume">Resumé</a>
+        
+      
+    </nav>
+  </div>
+</header>
+<div class="mdl-layout__drawer mdl-layout--large-screen-only" aria-hidden="true">
+  <span class="mdl-layout-title">
+    <a href="http://brianflove.com/">Brian Love</a>
+  </span>
+  <div class="subtitle">Angular + TypeScript Developer in Denver, CO</div>
+  <nav class="mdl-navigation">
+    
+      
+      
+      
+        <a href="http://brianflove.com/" class="mdl-navigation__link posts">Posts</a>
+      
+    
+      
+      
+      
+        <a href="http://brianflove.com/about-me" class="mdl-navigation__link about-me">About Me</a>
+      
+    
+      
+      
+      
+        <a href="http://brianflove.com/hire-me" class="mdl-navigation__link hire-me">Hire Me</a>
+      
+    
+      
+      
+      
+        <a href="http://brianflove.com/resume" class="mdl-navigation__link resume">Resumé</a>
+      
+    
+  </nav>
+  <div class="social">
+    <ul>
+      <li><a href="http://brianflove.com/feed.xml" class="rss"><i class="fa fa-rss"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/blove" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="https://www.facebook.com/brianflove" class="facebook"><i class="fa fa-facebook-official"></i></a></li>
+      <li><a href="https://twitter.com/brian_love" class="twitter"><i class="fa fa-twitter"></i></a></li>
+    </ul>
+  </div>
+</div>
+      <main class="mdl-layout__content">
+        <main class="post">
+  
+    <div class="banner" style="background-image: url(&#39;/images/banners/2016/typescript-2-express-mongoose-mocha-chai.jpg&#39;)"></div>
+  
+  <div class="article-wrapper">
+    <article class="mdl-card" itemscope="" itemtype="http://schema.org/BlogPosting">
+      <div class="mdl-card__title">
+        <h1 class="mdl-card__title-text" itemprop="name headline">
+          TypeScript 2 + Express + Mongoose + Mocha + Chai
+        </h1>
+      </div>
+      <div class="divider"></div>
+      <div class="meta">
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+            <time datetime="2016-11-11T00:00:00+00:00" itemprop="datePublished">
+              Posted on November 11, 2016
+            </time>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet mdl-cell--12-col-phone right">
+            
+              <div class="post-reading-time">
+                <i class="fa fa-clock-o"></i>
+                
+Reading time ~14 minutes
+              </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="content" itemprop="articleBody">
+        <p>MongoDB is an excellent choice for persisting data for your web application that uses the Express engine on Node.js.<!--more--></p>
+
+<p>In fact, <a href="https://expressjs.com/en/guide/database-integration.html#mongo">Express has documentation on getting started with MongoDB</a>.
+I recommend you check that out as well.</p>
+
+<p>I love JavaScript, including plain ‘ole vanilla JS.
+But, I also love TypeScript. :)</p>
+
+<p>In this post I am going to show you how to get started with MongoDB and mongoose in your Express web application.
+I’ll be using TypeScript 2, which is a superset of JavaScript.
+I will also use the Mocha testing framework with Chai assertions to create a unit test for our interfaces, schemas and models for mongoose.</p>
+
+<p>Let’s dive in.</p>
+
+<h2 id="source-code">Source Code</h2>
+
+<p>You can download the source code and follow along or fork the repository on GitHub:</p>
+
+<ul class="button-group">
+  <li><a href="https://github.com/blove/typescript-express-starter/archive/1-mongodb.zip" target="_blank">Download source code <i class="fa fa-download"></i></a></li>
+  <li><a href="https://github.com/blove/typescript-express-starter/tree/1-mongodb" target="_blank">Fork it on GitHub <i class="fa fa-github"></i></a></li>
+</ul>
+
+<h2 id="project-structure">Project Structure</h2>
+
+<p>I am going to be extending my <a href="https://github.com/blove/typescript-express-starter">TypeScript 2 + Express Starter Kit on GitHub</a>.
+If you are just getting started with TypeScript 2 to develop an Express web app then I suggest you check out <a href="http://brianflove.com/2016/11/08/typescript-2-express-node/">my article on getting started with TypeScript 2 and Express on Node.js</a>.</p>
+
+<p>Here is what my project structure looks like:</p>
+
+<pre>.
+├── bin
+│&nbsp;&nbsp; └── www
+├── dist
+│&nbsp;&nbsp; ├── interfaces
+│&nbsp;&nbsp; │&nbsp;&nbsp; └── user.js
+│&nbsp;&nbsp; ├── models
+│&nbsp;&nbsp; │&nbsp;&nbsp; ├── model.js
+│&nbsp;&nbsp; │&nbsp;&nbsp; └── user.js
+│&nbsp;&nbsp; ├── routes
+│&nbsp;&nbsp; │&nbsp;&nbsp; ├── index.js
+│&nbsp;&nbsp; │&nbsp;&nbsp; └── route.js
+│&nbsp;&nbsp; ├── schemas
+│&nbsp;&nbsp; │&nbsp;&nbsp; └── user.js
+│&nbsp;&nbsp; ├── server.js
+│&nbsp;&nbsp; ├── test
+│&nbsp;&nbsp; │&nbsp;&nbsp; └── user.js
+│&nbsp;&nbsp; └── views
+│&nbsp;&nbsp;     └── index.pug
+├── gruntfile.js
+├── package.json
+├── public
+├── src
+│&nbsp;&nbsp; ├── interfaces
+│&nbsp;&nbsp; │&nbsp;&nbsp; └── user.ts
+│&nbsp;&nbsp; ├── models
+│&nbsp;&nbsp; │&nbsp;&nbsp; ├── model.ts
+│&nbsp;&nbsp; │&nbsp;&nbsp; └── user.ts
+│&nbsp;&nbsp; ├── npm-debug.log
+│&nbsp;&nbsp; ├── routes
+│&nbsp;&nbsp; │&nbsp;&nbsp; ├── index.ts
+│&nbsp;&nbsp; │&nbsp;&nbsp; └── route.ts
+│&nbsp;&nbsp; ├── schemas
+│&nbsp;&nbsp; │&nbsp;&nbsp; └── user.ts
+│&nbsp;&nbsp; ├── server.ts
+│&nbsp;&nbsp; └── test
+│&nbsp;&nbsp;     └── user.ts
+└── views
+    └── index.pug</pre>
+
+<h2 id="install-mongodb-and-mongoose">Install MongoDB and mongoose</h2>
+
+<p>OK, let’s install MongoDB. I am going to be using <a href="http://brew.sh/">Homebrew</a>:</p>
+
+<pre class="  language-bash"><code class="  language-bash">$ brew update
+$ brew <span class="token function">install</span> mongodb
+$ <span class="token function">ln</span> -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents</code></pre>
+
+<p>The last line will copy the <strong>homebrew.mxcl.mongodb.plist</strong> file so that MongoDB is started when you login.</p>
+
+<p>Now, let’s install mongoose. I will be using the <code class="highlighter-rouge">--save</code> flag to write the dependency into my project’s <strong>package.json</strong> file.</p>
+
+<pre class="  language-bash"><code class="  language-bash">$ npm <span class="token function">install</span> mongoose --save
+$ npm <span class="token function">install</span> @types/mongoose --save-dev
+$ npm <span class="token function">install</span> @types/mongodb --save-dev</code></pre>
+
+<h2 id="interface">Interface</h2>
+
+<p>Next, create a new interface for your collection.
+In this tutorial I am going to be using a collection named <em>users</em>.
+Therefore, I am going to create a new <code class="highlighter-rouge">IUser</code> interface.</p>
+
+<p>Create a new file <strong>src/interfaces/user.ts</strong>:</p>
+
+<pre class="  language-javascript"><code class="  language-javascript"><span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">IUser</span> <span class="token punctuation">{</span>
+  email<span class="token operator">?</span><span class="token punctuation">:</span> string<span class="token punctuation">;</span>
+  firstName<span class="token operator">?</span><span class="token punctuation">:</span> string<span class="token punctuation">;</span>
+  lastName<span class="token operator">?</span><span class="token punctuation">:</span> string<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+
+<h2 id="schema">Schema</h2>
+
+<p>Now, create a new schema for a user called <code class="highlighter-rouge">userSchema</code>.
+Create a new file <strong>src/schemas/user.ts</strong>:</p>
+
+<pre class="  language-javascript"><code class="  language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> Schema <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"mongoose"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">var</span> userSchema<span class="token punctuation">:</span> Schema <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  createdAt<span class="token punctuation">:</span> Date<span class="token punctuation">,</span>
+  email<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+  firstName<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+  lastName<span class="token punctuation">:</span> String
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+userSchema<span class="token punctuation">.</span><span class="token function">pre</span><span class="token punctuation">(</span><span class="token string">"save"</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>next<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>createdAt<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>createdAt <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
+<p>Some things to note:</p>
+
+<ul>
+  <li>First, I import the <code class="highlighter-rouge">Schema</code> class from the mongoose package.</li>
+  <li>Next I create a new instance of <code class="highlighter-rouge">Schema</code> and call it <code class="highlighter-rouge">userSchema</code>. Note that I export this object from this package.</li>
+  <li>I am then creating a pre-save hook (or <a href="http://mongoosejs.com/docs/middleware.html">middleware</a>) to set the value of the <code class="highlighter-rouge">createdAt</code> property to the current time.</li>
+</ul>
+
+<h2 id="model">Model</h2>
+
+<p>Next we are going to create two new interfaces for our model:</p>
+
+<ol>
+  <li><code class="highlighter-rouge">IUserModel</code> will serve as the model interface for the <em>users</em> collection.</li>
+  <li><code class="highlighter-rouge">IModel</code> will serve as the interface for all models in our application.</li>
+</ol>
+
+<p>Create a new file <strong>src/models/user.ts</strong>:</p>
+
+<pre class="  language-javascript"><code class="  language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> Document <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"mongoose"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> IUser <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"../interfaces/user"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">IUserModel</span> <span class="token keyword">extends</span> <span class="token class-name">IUser</span><span class="token punctuation">,</span> Document <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">//custom methods for your model would be defined here</span>
+<span class="token punctuation">}</span></code></pre>
+
+<ul>
+  <li>First, I am importing the <code class="highlighter-rouge">Document</code> interface from the mongoose package.</li>
+  <li>I then import the <code class="highlighter-rouge">IUser</code> interface we created.</li>
+  <li>I then define a new interface named <code class="highlighter-rouge">IUserModel</code>. It extends both the <code class="highlighter-rouge">IUser</code> interface we created as well as the <code class="highlighter-rouge">Document</code> interface provided by mongoose.</li>
+</ul>
+
+<p>Create a new file <strong>src/models/model.ts</strong>:</p>
+
+<pre class="  language-javascript"><code class="  language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> Model <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"mongoose"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> IUserModel <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"./user"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">IModel</span> <span class="token punctuation">{</span>
+  user<span class="token punctuation">:</span> Model<span class="token operator">&lt;</span>IUserModel<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+
+<p>For right now my application only has a single model named <code class="highlighter-rouge">user</code> that is of type <code class="highlighter-rouge">Model&lt;IUserModel&gt;</code>.
+That means that the user property is <code class="highlighter-rouge">Model</code> of type <code class="highlighter-rouge">IUserModel</code>.
+We will use this model to create/edit/delete documents within our <em>users</em> collection.</p>
+
+<h2 id="install-q-optional">Install q (optional)</h2>
+
+<p>I am going to the using <a href="https://github.com/kriskowal/q">Q</a> for the promise library in mongoose.
+To use the <code class="highlighter-rouge">q</code> library we need to first install it via npm:</p>
+
+<pre class="  language-bash"><code class="  language-bash">npm <span class="token function">install</span> q --save</code></pre>
+
+<p>In the next section I will wire this up with mongoose.</p>
+
+<h2 id="update-server">Update <code class="highlighter-rouge">Server</code></h2>
+
+<p>OK, we have setup all of the interfaces for our schema and model.
+We are now ready to import these into our <code class="highlighter-rouge">Server</code> class.</p>
+
+<p>Here is my updated <strong>src/server.ts</strong> file:</p>
+
+<pre class="  language-javascript"><code class="  language-javascript"><span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> bodyParser <span class="token keyword">from</span> <span class="token string">"body-parser"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> cookieParser <span class="token keyword">from</span> <span class="token string">"cookie-parser"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> express <span class="token keyword">from</span> <span class="token string">"express"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> logger <span class="token keyword">from</span> <span class="token string">"morgan"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> path <span class="token keyword">from</span> <span class="token string">"path"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> errorHandler <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"errorhandler"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> methodOverride <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"method-override"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> mongoose <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"mongoose"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//import mongoose</span>
+
+<span class="token comment" spellcheck="true">//routes</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> IndexRoute <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"./routes/index"</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//interfaces</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> IUser <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"./interfaces/user"</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//import IUser</span>
+
+<span class="token comment" spellcheck="true">//models</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> IModel <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"./models/model"</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//import IModel</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> IUserModel <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"./models/user"</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//import IUserModel</span>
+
+<span class="token comment" spellcheck="true">//schemas</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> userSchema <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"./schemas/user"</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//import userSchema</span>
+
+<span class="token comment" spellcheck="true">/**
+ * The server.
+ *
+ * @class Server
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">Server</span> <span class="token punctuation">{</span>
+
+  <span class="token keyword">public</span> app<span class="token punctuation">:</span> express<span class="token punctuation">.</span>Application<span class="token punctuation">;</span>
+
+  <span class="token keyword">private</span> model<span class="token punctuation">:</span> IModel<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//an instance of IModel</span>
+
+  <span class="token comment" spellcheck="true">/**
+   * Bootstrap the application.
+   *
+   * @class Server
+   * @method bootstrap
+   * @static
+   * @return {ng.auto.IInjectorService} Returns the newly created injector for this app.
+   */</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token function">bootstrap</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> Server <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Server</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment" spellcheck="true">/**
+   * Constructor.
+   *
+   * @class Server
+   * @constructor
+   */</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">//instance defaults</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>model <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Object</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//initialize this to an empty object</span>
+
+    <span class="token comment" spellcheck="true">//create expressjs application</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>app <span class="token operator">=</span> <span class="token function">express</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//configure application</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">config</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//add routes</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">routes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//add api</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">api</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment" spellcheck="true">/**
+   * Configure application
+   *
+   * @class Server
+   * @method config
+   */</span>
+  <span class="token keyword">public</span> <span class="token function">config</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> MONGODB_CONNECTION<span class="token punctuation">:</span> string <span class="token operator">=</span> <span class="token string">"mongodb://localhost:27017/heros"</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//add static paths</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>express<span class="token punctuation">.</span><span class="token keyword">static</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">"public"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//configure pug</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>app<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token string">"views"</span><span class="token punctuation">,</span> path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">"views"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>app<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token string">"view engine"</span><span class="token punctuation">,</span> <span class="token string">"pug"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//mount logger</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">logger</span><span class="token punctuation">(</span><span class="token string">"dev"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//mount json form parser</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>bodyParser<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//mount query string parser</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>bodyParser<span class="token punctuation">.</span><span class="token function">urlencoded</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      extended<span class="token punctuation">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//mount cookie parker</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">cookieParser</span><span class="token punctuation">(</span><span class="token string">"SECRET_GOES_HERE"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//mount override</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">methodOverride</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//use q promises</span>
+    global<span class="token punctuation">.</span>Promise <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"q"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>Promise<span class="token punctuation">;</span>
+    mongoose<span class="token punctuation">.</span>Promise <span class="token operator">=</span> global<span class="token punctuation">.</span>Promise<span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//connect to mongoose</span>
+    <span class="token keyword">let</span> connection<span class="token punctuation">:</span> mongoose<span class="token punctuation">.</span>Connection <span class="token operator">=</span> mongoose<span class="token punctuation">.</span><span class="token function">createConnection</span><span class="token punctuation">(</span>MONGODB_CONNECTION<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//create models</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>model<span class="token punctuation">.</span>user <span class="token operator">=</span> connection<span class="token punctuation">.</span>model<span class="token operator">&lt;</span>IUserModel<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token string">"User"</span><span class="token punctuation">,</span> userSchema<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">// catch 404 and forward to error handler</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">:</span> any<span class="token punctuation">,</span> req<span class="token punctuation">:</span> express<span class="token punctuation">.</span>Request<span class="token punctuation">,</span> res<span class="token punctuation">:</span> express<span class="token punctuation">.</span>Response<span class="token punctuation">,</span> next<span class="token punctuation">:</span> express<span class="token punctuation">.</span>NextFunction<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        err<span class="token punctuation">.</span>status <span class="token operator">=</span> <span class="token number">404</span><span class="token punctuation">;</span>
+        <span class="token function">next</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//error handling</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">errorHandler</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+
+<p>Let’s take a closer look at the changes to our <code class="highlighter-rouge">Server</code> class.</p>
+
+<h3 id="imports">imports</h3>
+
+<pre class="  language-javascript"><code class="  language-javascript">
+<span class="token keyword">import</span> mongoose <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"mongoose"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//import mongoose</span>
+
+<span class="token comment" spellcheck="true">//interfaces</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> IUser <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"./interfaces/user"</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//import IUser</span>
+
+<span class="token comment" spellcheck="true">//models</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> IModel <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"./models/model"</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//import IModel</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> IUserModel <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"./models/user"</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//import IUserModel</span>
+
+<span class="token comment" spellcheck="true">//schemas</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> userSchema <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"./schemas/user"</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//import userSchema</span></code></pre>
+
+<p>The first thing we need to do is to import the <code class="highlighter-rouge">mongoose</code> package.
+Then we import the <code class="highlighter-rouge">IUser</code> interface as well as the <code class="highlighter-rouge">IModel</code> and <code class="highlighter-rouge">IUserModel</code> interfaces that we created.
+And then import the <code class="highlighter-rouge">userSchema</code>, which we will use to create a new <code class="highlighter-rouge">model()</code> in mongoose.
+We will wire up our connection to MongoDB and the models in the <code class="highlighter-rouge">config()</code> method.</p>
+
+<h3 id="model-property"><code class="highlighter-rouge">model</code> Property</h3>
+
+<p>I am then creating a new private property within the <code class="highlighter-rouge">Server</code> class called <code class="highlighter-rouge">model</code>.
+This object will be of type <code class="highlighter-rouge">IModel</code>, which we defined earlier in the <strong>src/interfaces/model.ts</strong> file.
+I set this to a new <code class="highlighter-rouge">Object</code> in the constructor function.</p>
+
+<pre class="  language-javascript"><code class="  language-javascript"><span class="token comment" spellcheck="true">/**
+ * The server.
+ *
+ * @class Server
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">Server</span> <span class="token punctuation">{</span>
+
+  <span class="token keyword">private</span> model<span class="token punctuation">:</span> IModel<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//an instance of IModel</span>
+
+  <span class="token comment" spellcheck="true">/**
+   * Constructor.
+   *
+   * @class Server
+   * @constructor
+   */</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">//instance defaults</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>model <span class="token operator">=</span> <span class="token function">Object</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//initialize this to an empty object</span>
+
+    <span class="token comment" spellcheck="true">//code omitted</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+
+<h3 id="updating-config">Updating <code class="highlighter-rouge">config()</code></h3>
+
+<p>Finally we are ready to setup the connection to our MongoDB server that we installed locally.</p>
+
+<p>As I stated previously, I am going to use the <code class="highlighter-rouge">q</code> promise library for mongoose promises.</p>
+
+<pre class="  language-javascript"><code class="  language-javascript"><span class="token comment" spellcheck="true">/**
+   * Configure application
+   *
+   * @class Server
+   * @method config
+   */</span>
+  <span class="token keyword">public</span> <span class="token function">config</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> MONGODB_CONNECTION<span class="token punctuation">:</span> string <span class="token operator">=</span> <span class="token string">"mongodb://localhost:27017/heros"</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//code omitted</span>
+
+    <span class="token comment" spellcheck="true">//use q promises</span>
+    global<span class="token punctuation">.</span>Promise <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"q"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>Promise<span class="token punctuation">;</span>
+    mongoose<span class="token punctuation">.</span>Promise <span class="token operator">=</span> global<span class="token punctuation">.</span>Promise<span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//connect to mongoose</span>
+    <span class="token keyword">let</span> connection<span class="token punctuation">:</span> mongoose<span class="token punctuation">.</span>Connection <span class="token operator">=</span> mongoose<span class="token punctuation">.</span><span class="token function">createConnection</span><span class="token punctuation">(</span>MONGODB_CONNECTION<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//create models</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>model<span class="token punctuation">.</span>user <span class="token operator">=</span> connection<span class="token punctuation">.</span>model<span class="token operator">&lt;</span>IUserModel<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token string">"User"</span><span class="token punctuation">,</span> userSchema<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//code omitted</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+
+<p>A couple of things to note:</p>
+
+<ul>
+  <li>First, I define a constant for the MongoDB connection string. This is just an example. I would highly recommend that you put this in some sort of configuration object that depends on the environment you are running your server in. This way you can run your server locally and test against a local MongoDB installation. And then when you are ready to go to production you can have your production server(s) hit a production MongoDB installation.</li>
+  <li>Note that in the connection string I am specifying the DB name as “heros”.</li>
+  <li>Next I import the <code class="highlighter-rouge">q</code> promise library. I am going to use this as the global promise library in my Node.js application as well as for mongoose promises.</li>
+  <li>I then create a new connection via the <code class="highlighter-rouge">createConnection()</code> method passing in the connection string.</li>
+  <li>Finally I create a new <code class="highlighter-rouge">model()</code> instance specifying the singular name of the collection in MongoDB along with the <code class="highlighter-rouge">UserSchema</code> that defines the schema for our <em>users</em> collection.</li>
+</ul>
+
+<h2 id="testing-with-mocha-and-chai">Testing with Mocha and Chai</h2>
+
+<p>To test our Models I will be using <a href="http://brianflove.com/2016/11/11/typescript-2-express-mongoose-mocha-chai/">Mocha</a> with Chai as the assertion library.</p>
+
+<p>Mocha is a test framework that is very popular for Node.js development.
+Chai is an assertion library that includes methods like <code class="highlighter-rouge">expect()</code> and <code class="highlighter-rouge">assert()</code>.</p>
+
+<p>We could use node’s <a href="https://nodejs.org/api/assert.html">assert</a> module but I prefer the style of chai.</p>
+
+<p>Let’s go ahead and install Mochaand Chai via npm:</p>
+
+<pre class="  language-bash"><code class="  language-bash">$ npm <span class="token function">install</span> mocha --save-dev
+$ npm <span class="token function">install</span> chai --save-dev
+$ npm <span class="token function">install</span> @types/mocha --save-dev
+$ npm <span class="token function">install</span> @types/chai --save-dev</code></pre>
+
+<p>Next, I am going to modify my <strong>gruntfile.js</strong> file to add a custom <code class="highlighter-rouge">test</code> script:</p>
+
+<pre class="  language-javascript"><code class="  language-javascript"><span class="token punctuation">{</span>
+  <span class="token string">"name"</span><span class="token punctuation">:</span> <span class="token string">"heros"</span><span class="token punctuation">,</span>
+  <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"The tour of heros"</span><span class="token punctuation">,</span>
+  <span class="token string">"version"</span><span class="token punctuation">:</span> <span class="token string">"1.0.0"</span><span class="token punctuation">,</span>
+  <span class="token string">"private"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string">"author"</span><span class="token punctuation">:</span> <span class="token string">"Brian Love"</span><span class="token punctuation">,</span>
+  <span class="token string">"scripts"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">"dev"</span><span class="token punctuation">:</span> <span class="token string">"NODE_ENV=development nodemon ./bin/www"</span><span class="token punctuation">,</span>
+    <span class="token string">"grunt"</span><span class="token punctuation">:</span> <span class="token string">"grunt"</span><span class="token punctuation">,</span>
+    <span class="token string">"test"</span><span class="token punctuation">:</span> <span class="token string">"mocha dist/test"</span><span class="token punctuation">,</span>
+    <span class="token string">"start"</span><span class="token punctuation">:</span> <span class="token string">"node ./bin/www"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment" spellcheck="true">//code omitted</span>
+<span class="token punctuation">}</span></code></pre>
+
+<p>Executing <code class="highlighter-rouge">npm test</code> will invoke our tests.</p>
+
+<h2 id="create-test">Create Test</h2>
+
+<p><strong>NOTE:</strong> I have updated this post to use the mocha-typescript module.
+This takes advantage of decorators in TypeScript and can make your tests easier to write.
+So, <em>you might want to skip down the next section</em> to create the test using mocha-typescript.</p>
+
+<p>With Mocha and Chai installed create a new file at <strong>src/test/user.ts</strong>:</p>
+
+<pre class="  language-javascript"><code class="  language-javascript"><span class="token keyword">import</span> <span class="token string">"mocha"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> IUser <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"../interfaces/user"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> IUserModel <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"../models/user"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> userSchema <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"../schemas/user"</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//use q promises</span>
+global<span class="token punctuation">.</span>Promise <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"q"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>Promise<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//import mongoose</span>
+<span class="token keyword">import</span> mongoose <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"mongoose"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//use q library for mongoose promise</span>
+mongoose<span class="token punctuation">.</span>Promise <span class="token operator">=</span> global<span class="token punctuation">.</span>Promise<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//connect to mongoose and create model</span>
+<span class="token keyword">const</span> MONGODB_CONNECTION<span class="token punctuation">:</span> string <span class="token operator">=</span> <span class="token string">"mongodb://localhost:27017/heros"</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> connection<span class="token punctuation">:</span> mongoose<span class="token punctuation">.</span>Connection <span class="token operator">=</span> mongoose<span class="token punctuation">.</span><span class="token function">createConnection</span><span class="token punctuation">(</span>MONGODB_CONNECTION<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> User<span class="token punctuation">:</span> mongoose<span class="token punctuation">.</span>Model<span class="token operator">&lt;</span>IUserModel<span class="token operator">&gt;</span> <span class="token operator">=</span> connection<span class="token punctuation">.</span>model<span class="token operator">&lt;</span>IUserModel<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token string">"User"</span><span class="token punctuation">,</span> userSchema<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//require chai and use should() assertions</span>
+<span class="token keyword">let</span> chai <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"chai"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+chai<span class="token punctuation">.</span><span class="token function">should</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">"User"</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">"create()"</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">"should create a new User"</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment" spellcheck="true">//user object</span>
+      <span class="token keyword">let</span> user<span class="token punctuation">:</span> IUser <span class="token operator">=</span> <span class="token punctuation">{</span>
+        email<span class="token punctuation">:</span> <span class="token string">"foo@bar.com"</span><span class="token punctuation">,</span>
+        firstName<span class="token punctuation">:</span> <span class="token string">"Brian"</span><span class="token punctuation">,</span>
+        lastName<span class="token punctuation">:</span> <span class="token string">"Love"</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+      <span class="token comment" spellcheck="true">//create user and return promise</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>result <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//verify _id property exists</span>
+        result<span class="token punctuation">.</span>_id<span class="token punctuation">.</span>should<span class="token punctuation">.</span>exist<span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//verify email</span>
+        result<span class="token punctuation">.</span>email<span class="token punctuation">.</span>should<span class="token punctuation">.</span><span class="token function">equal</span><span class="token punctuation">(</span>user<span class="token punctuation">.</span>email<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//verify firstName</span>
+        result<span class="token punctuation">.</span>firstName<span class="token punctuation">.</span>should<span class="token punctuation">.</span><span class="token function">equal</span><span class="token punctuation">(</span>user<span class="token punctuation">.</span>firstName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//verify lastName</span>
+        result<span class="token punctuation">.</span>lastName<span class="token punctuation">.</span>should<span class="token punctuation">.</span><span class="token function">equal</span><span class="token punctuation">(</span>user<span class="token punctuation">.</span>lastName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
+<p>There is a bit of ceremony at the top of our test.
+I’m not going to cover it in detail.
+I import our necessary modules, classes and functions.
+I then configure mongoose to use the Q library for promises, create the connection to MongoDB and create the <code class="highlighter-rouge">User</code> model.</p>
+
+<p>The important part is the test that “should create a new user”:</p>
+
+<ul>
+  <li>First, I create a new <code class="highlighter-rouge">user</code> object that is a <code class="highlighter-rouge">IUser</code>. I set the values for the <code class="highlighter-rouge">email</code>, <code class="highlighter-rouge">firstName</code> and <code class="highlighter-rouge">lastName</code> properties.</li>
+  <li>Next, I create a <code class="highlighter-rouge">new User()</code> passing in the <code class="highlighter-rouge">user</code> object. I then invoke the <code class="highlighter-rouge">save()</code> method to save the new document I just created. Then I invoke the <code class="highlighter-rouge">then()</code> promise object method.</li>
+  <li>Note that I return the result of the <code class="highlighter-rouge">then()</code> method, which is a promise object. I am using the <a href="https://mochajs.org/#asynchronous-code">asynchronous promise approach with chai</a>. When using this approach we can simply return a promise object rather than invoking the <code class="highlighter-rouge">done()</code> callback method (the more traditional approach to using mocha).</li>
+  <li>Within the <code class="highlighter-rouge">then()</code> resolution callback function I first verify that the <code class="highlighter-rouge">_id</code> property exists in the <code class="highlighter-rouge">result</code>, which is the <code class="highlighter-rouge">IUserModel</code> document that is returned after saving the document into our MongoDB <em>users</em> collection.</li>
+  <li>I then verify that the value of the <code class="highlighter-rouge">email</code>, <code class="highlighter-rouge">firstName</code> and <code class="highlighter-rouge">lastName</code> values match that of the <code class="highlighter-rouge">user</code> object.</li>
+</ul>
+
+<p>OK, let’s run the test:</p>
+
+<pre class="  language-bash"><code class="  language-bash">$ npm run grunt
+$ npm <span class="token function">test</span></code></pre>
+
+<p>If all goes well then you should see a success message:</p>
+
+<p><img src="./TypeScript 2 + Express + Mongoose + Mocha + Chai _ Brian Love_files/typescript-2-express-mongoose-mocha-chai-mocha-success.png" alt="Mocha success message"></p>
+
+<h2 id="using-mocha-typescript-updated-2016-11-28">Using mocha-typescript [Updated 2016-11-28]</h2>
+
+<p>Thank you to Michal who recommended using “a more TypeScript approach” to creating my tests using the project <a href="https://github.com/PanayotCankov/mocha-typescript">mocha-typescript</a>.</p>
+
+<p>To get started with mocha-typescript install it via npm:</p>
+
+<pre class="  language-bash"><code class="  language-bash">$ npm <span class="token function">install</span> mocha-typescript --save-dev</code></pre>
+
+<p>The mocha-typescript module includes several decorators that implement the Mocha interfaces.
+The first decorator that we use is the <code class="highlighter-rouge">@suite</code> decorator that implements the <code class="highlighter-rouge">Mocha.IContextDefinition</code> interface.
+Previously I used Mocha’s <code class="highlighter-rouge">describe()</code> method:</p>
+
+<pre class="  language-javascript"><code class="  language-javascript"><span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">"User"</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">//tests</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
+<p>Using mocha-typescript I created a <code class="highlighter-rouge">UserTest</code> class that is decorated with the <code class="highlighter-rouge">@suite</code> decorator:</p>
+
+<pre class="  language-javascript"><code class="  language-javascript">@suite
+<span class="token keyword">class</span> <span class="token class-name">UserTest</span> <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">//tests</span>
+<span class="token punctuation">}</span></code></pre>
+
+<p>The next decorator that we use is the <code class="highlighter-rouge">@test</code> decorator that implements the <code class="highlighter-rouge">Mocha.ITestDefinition</code> interface.
+Previously I used Mocha’s <code class="highlighter-rouge">it()</code> method:</p>
+
+<pre class="  language-javascript"><code class="  language-javascript"><span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">"User"</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">"should create a new User"</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">//code that returns a Promise object</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
+<p>Using mocha-typescript we can add methods that are decorated with the <code class="highlighter-rouge">@test</code> decorator:</p>
+
+<pre class="  language-javascript"><code class="  language-javascript">@suite <span class="token keyword">class</span> <span class="token class-name">UserTest</span> <span class="token punctuation">{</span>
+
+  @<span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"should create a new User"</span><span class="token punctuation">)</span>
+  <span class="token keyword">public</span> <span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">//code that returns a Promise object</span>
+  <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span></code></pre>
+
+<p>Note that a decorator does not end with a semi-colon.
+If you are getting compilation error <code class="highlighter-rouge">error TS1146: Declaration expected</code> then this is likely due to ending your decorator with a semi-colon.</p>
+
+<p>Here is the complete code for my <code class="highlighter-rouge">UserTest</code> class using mocha-typescript:</p>
+
+<pre class="  language-javascript"><code class="  language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> suite<span class="token punctuation">,</span> test <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"mocha-typescript"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> IUser <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"../interfaces/user"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> IUserModel <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"../models/user"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> userSchema <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"../schemas/user"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> mongoose <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"mongoose"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+@suite
+<span class="token keyword">class</span> <span class="token class-name">UserTest</span> <span class="token punctuation">{</span>
+
+  <span class="token comment" spellcheck="true">//store test data</span>
+  <span class="token keyword">private</span> data<span class="token punctuation">:</span> IUser<span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">//the User model</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> User<span class="token punctuation">:</span> mongoose<span class="token punctuation">.</span>Model<span class="token operator">&lt;</span>IUserModel<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token function">before</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">//use q promises</span>
+    global<span class="token punctuation">.</span>Promise <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"q"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>Promise<span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//use q library for mongoose promise</span>
+    mongoose<span class="token punctuation">.</span>Promise <span class="token operator">=</span> global<span class="token punctuation">.</span>Promise<span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//connect to mongoose and create model</span>
+    <span class="token keyword">const</span> MONGODB_CONNECTION<span class="token punctuation">:</span> string <span class="token operator">=</span> <span class="token string">"mongodb://localhost:27017/heros"</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> connection<span class="token punctuation">:</span> mongoose<span class="token punctuation">.</span>Connection <span class="token operator">=</span> mongoose<span class="token punctuation">.</span><span class="token function">createConnection</span><span class="token punctuation">(</span>MONGODB_CONNECTION<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    UserTest<span class="token punctuation">.</span>User <span class="token operator">=</span> connection<span class="token punctuation">.</span>model<span class="token operator">&lt;</span>IUserModel<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token string">"User"</span><span class="token punctuation">,</span> userSchema<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//require chai and use should() assertions</span>
+    <span class="token keyword">let</span> chai <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"chai"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    chai<span class="token punctuation">.</span><span class="token function">should</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>data <span class="token operator">=</span> <span class="token punctuation">{</span>
+      email<span class="token punctuation">:</span> <span class="token string">"foo@bar.com"</span><span class="token punctuation">,</span>
+      firstName<span class="token punctuation">:</span> <span class="token string">"Brian"</span><span class="token punctuation">,</span>
+      lastName<span class="token punctuation">:</span> <span class="token string">"Love"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  @<span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"should create a new User"</span><span class="token punctuation">)</span>
+  <span class="token keyword">public</span> <span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">//create user and return promise</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">UserTest<span class="token punctuation">.</span>User</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>result <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+      <span class="token comment" spellcheck="true">//verify _id property exists</span>
+      result<span class="token punctuation">.</span>_id<span class="token punctuation">.</span>should<span class="token punctuation">.</span>exist<span class="token punctuation">;</span>
+
+      <span class="token comment" spellcheck="true">//verify email</span>
+      result<span class="token punctuation">.</span>email<span class="token punctuation">.</span>should<span class="token punctuation">.</span><span class="token function">equal</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span>email<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment" spellcheck="true">//verify firstName</span>
+      result<span class="token punctuation">.</span>firstName<span class="token punctuation">.</span>should<span class="token punctuation">.</span><span class="token function">equal</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span>firstName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment" spellcheck="true">//verify lastName</span>
+      result<span class="token punctuation">.</span>lastName<span class="token punctuation">.</span>should<span class="token punctuation">.</span><span class="token function">equal</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span>lastName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+
+<p>In our updated <strong>src/test/user.ts</strong> file we are now using the mocha-typescript module and the <code class="highlighter-rouge">@suite</code> and <code class="highlighter-rouge">@test()</code> decorators.</p>
+
+<p>Some things to note:</p>
+
+<ul>
+  <li>I removed the import of “mocha” and replaced this with an import statement that imports the <code class="highlighter-rouge">suite</code> and <code class="highlighter-rouge">test</code> decorators (notice to @-symbol) from the “mocha-typescript” module.</li>
+  <li>I then created the <code class="highlighter-rouge">UserTest</code> class.</li>
+  <li>I have a private variable named <code class="highlighter-rouge">data</code> that will contain the test data that I will use for the test(s). This is not necessary for the simple implementation in this example, however, it is helpful when you have multiple tests.</li>
+  <li>Previously I had some setup code outside of the <code class="highlighter-rouge">describe()</code> function (to configure promises and to create a connection to Mongodb using mongoose). I think this is a standard approach using vanilla JS to writing tests with Mocha. However, with mocha-typescript we cand define a static <code class="highlighter-rouge">before()</code> method that is invoked before our tests are executed. I moved my setup code into this method. I think this is a bit cleaner.</li>
+  <li>In the <code class="highlighter-rouge">constructor()</code> function I set the value of <code class="highlighter-rouge">data</code>.</li>
+  <li>I have a <code class="highlighter-rouge">create()</code> method that is decorated with the <code class="highlighter-rouge">@test()</code> decorator.</li>
+  <li>The <code class="highlighter-rouge">create()</code> method returns a promise object so that my test is asynchronous.</li>
+  <li>I am doing some simple verifications using chai should assertions to test the <code class="highlighter-rouge">result</code>.</li>
+</ul>
+
+<p>The last thing to note is that decorators are still experimental in TypeScript.
+The TypeScript documentation warns us:</p>
+
+<blockquote>
+  <p>NOTE Decorators are an experimental feature that may change in future releases.</p>
+</blockquote>
+
+<p>To enable this experimental feature we need to set a compiler flag named <em>experimentalDecorators</em> to <em>true</em>.
+In my sample project I am using Grunt to compile the TypeScript in the <strong>src</strong> directory to the <strong>dist</strong> directory.
+I have a <strong>gruntfile.js</strong> file that uses the <a href="https://github.com/TypeStrong/grunt-ts">grunt-ts</a> task to compile the TypeScript to ES6 compatible JavaScript.
+Using grunt-ts we can simply add a flag to the <code class="highlighter-rouge">options</code>:</p>
+
+<pre class="  language-json"><code class="  language-json">ts<span class="token operator">:</span> <span class="token punctuation">{</span>
+  app<span class="token operator">:</span> <span class="token punctuation">{</span>
+    files<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+      src<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"src/\*\*/\*.ts"</span><span class="token punctuation">,</span> <span class="token string">"!src/.baseDir.ts"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      dest<span class="token operator">:</span> <span class="token string">"./dist"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    options<span class="token operator">:</span> <span class="token punctuation">{</span>
+      experimentalDecorators<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      module<span class="token operator">:</span> <span class="token string">"commonjs"</span><span class="token punctuation">,</span>
+      target<span class="token operator">:</span> <span class="token string">"es6"</span><span class="token punctuation">,</span>
+      sourceMap<span class="token operator">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+
+<p>Note that I have set <code class="highlighter-rouge">experimentalDecorators</code> to <code class="highlighter-rouge">true</code>.
+Now we are ready to build and run our tests:</p>
+
+<pre class="  language-bash"><code class="  language-bash">$ npm run grunt
+$ npm <span class="token function">test</span></code></pre>
+
+<p>If you are using the <code class="highlighter-rouge">tsc</code> command line to compile your TypeScript then you must use the <code class="highlighter-rouge">experimentalDecorators</code> flag (along with the ES5 or greater target):</p>
+
+<pre class="  language-bash"><code class="  language-bash">tsc --target ES5 --experimentalDecorators</code></pre>
+
+<h2 id="mongoclient">Mongoclient</h2>
+
+<p>In case you want to test that your connection to MongoDB is working using more of a GUI approach then check out <a href="https://github.com/rsercano/mongoclient">Mongoclient</a>.
+After you install it you will need to configure a connection to MongoDB on localhost and set the DB to “heros”.
+If you look back at the connection string for MongoDB I used “heros” as the DB name.</p>
+
+<p>Here is a screen shot of Mongoclient showing the document that I created when executing the test:</p>
+
+<p><img src="./TypeScript 2 + Express + Mongoose + Mocha + Chai _ Brian Love_files/typescript-2-express-mongoose-mocha-chai-mongoclient.png" alt="Screen shot of Mongoclient showing users collection with the user document created from the test."></p>
+
+<h2 id="source-code-1">Source Code</h2>
+
+<p>You can download the source code and follow along or fork the repository on GitHub:</p>
+
+<ul class="button-group">
+  <li><a href="https://github.com/blove/typescript-express-starter/archive/1-mongodb.zip" target="_blank">Download source code <i class="fa fa-download"></i></a></li>
+  <li><a href="https://github.com/blove/typescript-express-starter/tree/1-mongodb" target="_blank">Fork it on GitHub <i class="fa fa-github"></i></a></li>
+</ul>
+
+<p>The source code for this tutorial is a branch named <em>1-mongodb</em> off of my <a href="https://github.com/blove/typescript-express-starter">TypeScript 2 + Express Starter Kit</a></p>
+
+      </div>
+      
+        <div class="categories">
+          
+            <a href="http://brianflove.com/category/typescript">#typescript</a>
+          
+            <a href="http://brianflove.com/category/node-js">#node-js</a>
+          
+            <a href="http://brianflove.com/category/express">#express</a>
+          
+            <a href="http://brianflove.com/category/mongoose">#mongoose</a>
+          
+            <a href="http://brianflove.com/category/mongodb">#mongodb</a>
+          
+        </div>
+      
+      <div class="profile">
+        <div class="bio">
+          <h3>Brian Love</h3>
+          <p>Hi, I'm Brian. I am interested in TypeScript, Angular and Node.js. I'm married to my best friend Bonnie, I live in Denver and I ski (a lot).</p>
+        </div>
+      </div>
+      
+        <div class="comments">
+          <div id="disqus_thread"><iframe id="dsq-app1" name="dsq-app1" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="./TypeScript 2 + Express + Mongoose + Mocha + Chai _ Brian Love_files/saved_resource.html" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 8568px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe></div>
+<script>
+  var disqus_config = function () {
+    this.page.url = 'http://brianflove.com/2016/11/11/typescript-2-express-mongoose-mocha-chai/';
+  };
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = '//brianflove.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the &lt;a href="https://disqus.com/?ref_noscript"&gt;comments.&lt;/a&gt;</noscript>
+        </div>
+      
+    </article>
+  </div>
+</main>
+        <footer class="mdl-mini-footer mdl-layout--small-screen-only">
+  <div class="copyright">
+    © 2017 Brian Love
+  </div>
+  <ul class="mdl-mini-footer__link-list">
+    <li><a href="https://www.linkedin.com/in/blove" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+    <li><a href="https://www.facebook.com/brianflove" class="facebook"><i class="fa fa-facebook-official"></i></a></li>
+    <li><a href="https://twitter.com/brian_love" class="twitter"><i class="fa fa-twitter"></i></a></li>
+  </ul>
+</footer>
+
+<!--Device detection elements-->
+<div class="device-xs visible-xs"></div>
+<div class="device-sm visible-sm"></div>
+<div class="device-md visible-md"></div>
+<div class="device-lg visible-lg"></div>
+
+
+  <script src="./TypeScript 2 + Express + Mongoose + Mocha + Chai _ Brian Love_files/vendor.bundle.js.download"></script>
+  <script src="./TypeScript 2 + Express + Mongoose + Mocha + Chai _ Brian Love_files/main.bundle.js.download"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-35377591-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+      </main>
+    <div class="mdl-layout__obfuscator"></div></div></div>
+  
+<iframe style="display: none;" src="./TypeScript 2 + Express + Mongoose + Mocha + Chai _ Brian Love_files/saved_resource(1).html"></iframe><span style="border-radius: 3px; text-indent: 20px; width: auto; padding: 0px 4px 0px 0px; text-align: center; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif; color: rgb(255, 255, 255); background: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjYmQwODFjIj48L3BhdGg+PC9nPjwvc3ZnPg==&quot;) 3px 50% / 14px 14px no-repeat rgb(189, 8, 28); position: absolute; opacity: 1; z-index: 8675309; display: none; cursor: pointer; border: none; -webkit-font-smoothing: antialiased;">Save</span><span style="border-radius: 3px; text-indent: 20px; width: 20px; height: 20px; background: url(&quot;data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHdpZHRoPSIzMHB4IiBoZWlnaHQ9IjMwcHgiIHZpZXdCb3g9IjAgMCAzMCAzMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPGc+CjxwYXRoIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI0IiBkPSJNMTcsMTcgTDIyLDIyIFogIi8+CjxjaXJjbGUgc3Ryb2tlPSIjZmZmIiBjeD0iMTMiIGN5PSIxMyIgcj0iNiIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIzLjUiLz4KPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAsMCBMOCwwIEw4LDMgTDMsMyBMMyw4IEwwLDggWiIvPgo8cGF0aCBmaWxsPSIjZmZmIiBkPSJNMzAsMjIgTDMwLDMwIEwyMiwzMCBMMjIsMjcgTDI3LDI3IEwyNywyMiBaIi8+CjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0zMCwwIEwzMCw4IEwyNyw4IEwyNywzIEwyMiwzIEwyMiwwIFoiLz4KPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAsMjIgTDMsMjIgTDMsMjcgTDgsMjcgTDgsMzAgTDAsMzBaIi8+CjwvZz4KPC9zdmc+Cg==&quot;) 50% 50% / 14px 14px no-repeat rgba(0, 0, 0, 0.4); position: absolute; opacity: 1; z-index: 8675309; display: none; cursor: pointer; border: none;"></span></body><div></div></html>

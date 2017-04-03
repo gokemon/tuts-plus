@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- saved from url=(0455)https://static.traversedlp.com/v1/3868ded5-20b5-4d6b-8722-8ecdc7af7105/container.html?emailMd5Lower=09c197ad09f6faa9e4ac3f50d6c4c68c&emailMd5Upper=1bf2c91f346110db5bb466c105b3cde9&emailSha1Lower=da7605f5642c2c35a4f51ecdcf9deb17ca448604&emailSha1Upper=8a8f361e6d9919dd17016ee506febac1eba2bb05&emailSha256Lower=5ef83d4549126e59184575890407cb77be5d287365bdc9a794d14c330f79d5ff&emailSha256Upper=9368fe94cf5a6acf096e26649b39c59e470f023374fa3ac5515be82e25d57f06 -->
+<html lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <script type="text/javascript" src="./traverse-container.js.download"> </script>
+
+    <iframe src="javascript:false" class="traverseContainer" style="width: 0px; height: 0px; border: 0px;" src="./saved_resource(3).html"></iframe><script type="text/javascript">
+        var getParamsFromUrl = function() {
+          var query = location.search.substr(1);
+          var result = {};
+          var part;
+          var queryParts = query.split("&");
+          for (var i = 0; i < queryParts.length; i++){
+            part = queryParts[i];
+            if(part){
+              part = part.split("+").join(" ");
+              var eq = part.indexOf("=");
+              var key = eq>-1 ? part.substr(0,eq) : part;
+              var val = eq>-1 ? decodeURIComponent(part.substr(eq+1)) : "";
+              var from = key.indexOf("[");
+              if(from==-1) result[decodeURIComponent(key)] = val;
+              else {
+                var to = key.indexOf("]");
+                var index = decodeURIComponent(key.substring(from+1,to));
+                key = decodeURIComponent(key.substring(0,from));
+                if(!result[key]) result[key] = [];
+                if(!index) result[key].push(val);
+                else result[key][index] = val;
+              }
+            }
+          }
+          return result;
+        }
+        var urlParams = getParamsFromUrl();
+
+        TraverseContainer.start(urlParams);
+    </script>
+  
+
+</body></html>

@@ -94,6 +94,36 @@ Steps for doing GitHub push & pull requests and merges
 [How to Host a MEAN Stack App on Digital Ocean](https://scotch.io/tutorials/how-to-host-a-mean-stack-app-on-digital-ocean)
 
 
+## Other Stuff like Beer Locker & Twitatron
+
+[Beer Locker: Building a RESTful API With Node](http://scottksmith.com/blog/2014/05/02/building-restful-apis-with-node/)
+
+Part 2 - CRUD
+
+Part 3 - Passport
+
+Part 4 - OAuth2 Server
+
+Part 5 - Digest
+
+[Part 6 - Username & Password](http://scottksmith.com/blog/2014/09/18/beer-locker-building-a-restful-api-with-node-username-and-password/)
+
+
+
+
+
+[Twitatron: Building a Production Web App With Node](http://scottksmith.com/blog/2014/10/05/twitatron-building-a-production-web-app-with-node/)
+
+[Part 2  - Views & Controllers](http://scottksmith.com/blog/2015/03/23/twitatron-building-a-production-web-app-with-node-views-and-controllers/)
+
+[Part 3  - User Accounts](http://scottksmith.com/blog/2015/05/26/twitatron-building-a-production-web-app-with-node-user-accounts/)
+
+[OctoPerf ~ REST API USING NODE](https://octoperf.com/blog/2015/09/10/nodejs-express-typescript/)
+TypeScript, debuggers, unit tests, code quality tool( SonarQube)
+
+[how to do Node.js monitoring and how to find advanced issues in production environments](https://blog.risingstack.com/node-hero-monitoring-node-js-applications/). part of the 13 part set.
+
+
 
 
 
