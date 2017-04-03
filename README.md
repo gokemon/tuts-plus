@@ -10,7 +10,7 @@ OK, so I have some clean up on which ones we have done, and when, and which we h
 
 https://leanpub.com/mean-machine
 
-## NodeJS
+## NodeJS 
 Links to Node tutorials here
 
 [Easily Develop Node.js and MongoDB Apps with Mongoose](https://scotch.io/tutorials/using-mongoosejs-in-node-js-and-mongodb-applications) Scotch.IO
@@ -37,7 +37,7 @@ Links to Angular 2 tutorials here
 
 
 ## TypeScript 2
-Links to TypeScript 2 tutorials here
+**Links to TypeScript 2 tutorials here.** *I want more TS2 learning material, like doing all this stuff, but only coding in TS2, so I can learn it better than plain JS.*
 
 [Building a MEAN (MongoDB, ExpressJs, Angular and Node.js) api app using TypeScript and host it with Heroku](https://zimmergren.net/building-a-mean-mongodb-expressjs-angular-and-node-js-api-app-using-typescript-and-host-it-with-heroku/) Zimmergren's 
 
@@ -93,37 +93,39 @@ Steps for doing GitHub push & pull requests and merges
 
 [How to Host a MEAN Stack App on Digital Ocean](https://scotch.io/tutorials/how-to-host-a-mean-stack-app-on-digital-ocean)
 
-[WTF image here]
-![Write Better Fracking Code](https://github.com/gokemon/tuts-plus/blob/master/images/code-reviews_WTFs.jpg)
-Write better code
-
-
-## Other Stuff like Beer Locker & Twitatron
-
-[Beer Locker: Building a RESTful API With Node](http://scottksmith.com/blog/2014/05/02/building-restful-apis-with-node/)
-
-Part 2 - CRUD
-
-Part 3 - Passport
-
-Part 4 - OAuth2 Server
-
-Part 5 - Digest
-
-[Part 6 - Username & Password](http://scottksmith.com/blog/2014/09/18/beer-locker-building-a-restful-api-with-node-username-and-password/)
-
-
-
-
-
-[Twitatron: Building a Production Web App With Node](http://scottksmith.com/blog/2014/10/05/twitatron-building-a-production-web-app-with-node/)
-
-[Part 2  - Views & Controllers](http://scottksmith.com/blog/2015/03/23/twitatron-building-a-production-web-app-with-node-views-and-controllers/)
-
-[Part 3  - User Accounts](http://scottksmith.com/blog/2015/05/26/twitatron-building-a-production-web-app-with-node-user-accounts/)
-
 [OctoPerf ~ REST API USING NODE](https://octoperf.com/blog/2015/09/10/nodejs-express-typescript/)
 TypeScript, debuggers, unit tests, code quality tool( SonarQube)
+***This guy writes from a JAVA mindset***
+
+
+
+
+## Series like Beer Locker, Twitatron, Node Hero
+
+[WTF image here]
+
+![Write Better Fracking Code](https://github.com/gokemon/tuts-plus/blob/master/images/code-reviews_WTFs.jpg)
+
+Write better code
+
+#### Beer Locker
+
+1. [Beer Locker: Building a RESTful API With Node](http://scottksmith.com/blog/2014/05/02/building-restful-apis-with-node/)
+1. CRUD
+1. Passport
+1. OAuth2 Server
+1. Digest
+1. [Username & Password](http://scottksmith.com/blog/2014/09/18/beer-locker-building-a-restful-api-with-node-username-and-password/)
+
+
+
+#### Twitatron
+
+1. [Building a Production Web App With Node](http://scottksmith.com/blog/2014/10/05/twitatron-building-a-production-web-app-with-node/)
+1. [Views & Controllers](http://scottksmith.com/blog/2015/03/23/twitatron-building-a-production-web-app-with-node-views-and-controllers/)
+1. [User Accounts](http://scottksmith.com/blog/2015/05/26/twitatron-building-a-production-web-app-with-node-user-accounts/)
+
+
 
 ### Node Hero ~ part I
 
