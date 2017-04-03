@@ -94,6 +94,8 @@ Steps for doing GitHub push & pull requests and merges
 [How to Host a MEAN Stack App on Digital Ocean](https://scotch.io/tutorials/how-to-host-a-mean-stack-app-on-digital-ocean)
 
 [WTF image here]
+![Write Better Fracking Code](https://github.com/gokemon/tuts-plus/blob/master/images/code-reviews_WTFs.jpg)
+Write better code
 
 
 ## Other Stuff like Beer Locker & Twitatron
