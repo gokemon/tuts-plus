@@ -10,7 +10,7 @@ OK, so I have some clean up on which ones we have done, and when, and which we h
 
 https://leanpub.com/mean-machine
 
-## NodeJS ![NodeJS](https://github.com/gokemon/tuts-plus/blob/master/images/Node-small.png)
+![NodeJS](https://github.com/gokemon/tuts-plus/blob/master/images/Node-small.png)## NodeJS 
 Links to Node tutorials here
 
 [Easily Develop Node.js and MongoDB Apps with Mongoose](https://scotch.io/tutorials/using-mongoosejs-in-node-js-and-mongodb-applications) Scotch.IO
