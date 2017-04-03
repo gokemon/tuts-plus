@@ -10,7 +10,7 @@ OK, so I have some clean up on which ones we have done, and when, and which we h
 
 https://leanpub.com/mean-machine
 
-## NodeJS 
+## NodeJS ![NodeJS](https://github.com/gokemon/tuts-plus/blob/master/images/Node-small.png)
 Links to Node tutorials here
 
 [Easily Develop Node.js and MongoDB Apps with Mongoose](https://scotch.io/tutorials/using-mongoosejs-in-node-js-and-mongodb-applications) Scotch.IO
@@ -27,7 +27,7 @@ This is the conman / ContactList repos
 
 
 
-## Angular 2
+## Angular 2 ![****](https://github.com/gokemon/tuts-plus/blob/master/images/A2-small.jpg)
 Links to Angular 2 tutorials here
 
 [mix & match any frontend tutorial with any backend tutorial](https://thinkster.io/tutorials/fullstack) Thinkster's 
@@ -36,7 +36,7 @@ Links to Angular 2 tutorials here
 
 
 
-## TypeScript 2
+## TypeScript 2 ![TypeScript 2](https://github.com/gokemon/tuts-plus/blob/master/images/TS2-small.png)
 **Links to TypeScript 2 tutorials here.** *I want more TS2 learning material, like doing all this stuff, but only coding in TS2, so I can learn it better than plain JS.*
 
 [Building a MEAN (MongoDB, ExpressJs, Angular and Node.js) api app using TypeScript and host it with Heroku](https://zimmergren.net/building-a-mean-mongodb-expressjs-angular-and-node-js-api-app-using-typescript-and-host-it-with-heroku/) Zimmergren's 
