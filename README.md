@@ -93,6 +93,8 @@ Steps for doing GitHub push & pull requests and merges
 
 [How to Host a MEAN Stack App on Digital Ocean](https://scotch.io/tutorials/how-to-host-a-mean-stack-app-on-digital-ocean)
 
+[WTF image here]
+
 
 ## Other Stuff like Beer Locker & Twitatron
 
@@ -121,8 +123,49 @@ Part 5 - Digest
 [OctoPerf ~ REST API USING NODE](https://octoperf.com/blog/2015/09/10/nodejs-express-typescript/)
 TypeScript, debuggers, unit tests, code quality tool( SonarQube)
 
-[how to do Node.js monitoring and how to find advanced issues in production environments](https://blog.risingstack.com/node-hero-monitoring-node-js-applications/). part of the 13 part set.
+### Node Hero ~ part I
 
+1. Getting started with Node.js
+1. Using NPM
+1. Understanding async programming
+1. Your first Node.js HTTP server
+1. Node.js database tutorial
+1. Node.js request module tutorial
+1. Node.js project structure tutorial
+1. [Node authentication using Passport](https://blog.risingstack.com/node-hero-node-js-authentication-passport-js/)
+1. [Node unit testing tutorial](https://blog.risingstack.com/node-hero-node-js-unit-testing-tutorial/)
+1. [Debugging Node applications](https://blog.risingstack.com/node-hero-node-js-debugging-tutorial/)
+1. Node.js Security Tutorial
+1. How to Deploy Node.js Applications
+1. [how to do Node.js monitoring and how to find advanced issues in production environments](https://blog.risingstack.com/node-hero-monitoring-node-js-applications/). 
+
+### Node at Scale ~ part II
+
+- **Using npm**
+	- [npm Tricks and Best Practices](https://blog.risingstack.com/nodejs-at-scale-npm-best-practices/)
+	- SemVer and Module Publishing
+	- Understanding the Module System, CommonJS and require
+- **Node.js Internals Deep Dive**
+	- The Node.js Event Loop
+	- Node.js Garbage Collection Explained
+	- [Writing Native Node Modules](https://blog.risingstack.com/writing-native-node-js-modules/) [*beyond my needs and abilities at this point*]
+- **Building with Node.js**
+	- [Advanced Node Project Structuring](https://blog.risingstack.com/node-js-project-structure-tutorial-node-js-at-scale/) [*interesting read, take some time to really read and learn it*]
+	- [JavaScript Clean Coding Best Practices](https://blog.risingstack.com/javascript-clean-coding-best-practices-node-js-at-scale/)
+	- Node.js Async Best Practices
+	- Event sourcing with Examples
+	- CQRS (Command Query Responsibility Segregation) Explained
+- **Testing + Node**
+	- Node.js Testing and Getting TDD Right
+	- Node.js End-to-End Testing with Nightwatch.js
+- **Node in Production**
+	- The Definitive Guide for Monitoring Node.js Applications
+	- Debugging Node.js Applications
+	- Profiling Node.js Applications
+- **Node + Microservices**
+	- Request Signing
+	- Distributed Tracing
+	- API Gateways
 
 
 
