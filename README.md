@@ -10,7 +10,7 @@ OK, so I have some clean up on which ones we have done, and when, and which we h
 
 https://leanpub.com/mean-machine
 
-![NodeJS](https://github.com/gokemon/tuts-plus/blob/master/images/Node-small.png) ## NodeJS 
+## NodeJS ![NodeJS](https://github.com/gokemon/tuts-plus/blob/master/images/Node-small.png) 
 Links to Node tutorials here
 
 [Easily Develop Node.js and MongoDB Apps with Mongoose](https://scotch.io/tutorials/using-mongoosejs-in-node-js-and-mongodb-applications) Scotch.IO
@@ -55,16 +55,33 @@ Here is my [repo for the TS2, Express and Node app](https://github.com/gokemon/h
 
 [TypeScript 2 + Express + Mongoose + Mocha + Chai](http://brianflove.com/2016/11/11/typescript-2-express-mongoose-mocha-chai/) EVEN BETTER
 
+[https://angular-university.io/course/typescript-2-tutorial](https://angular-university.io/course/typescript-2-tutorial)
+
+#### Other TypeScript2 repos (4/4)
+
+- [https://github.com/spock123/angular2-webpack2-typescript2](https://github.com/spock123/angular2-webpack2-typescript2)
+- [https://github.com/willemliu/typescript2-karma-jasmine-jquery-requirejs](https://github.com/willemliu/typescript2-karma-jasmine-jquery-requirejs)
+- [https://github.com/alexcheng1982/typescript2-cookbook](https://github.com/alexcheng1982/typescript2-cookbook)
+- [https://github.com/setry14/boilerplate-angular4-webpack2-typescript2-angularmaterial2](https://github.com/setry14/boilerplate-angular4-webpack2-typescript2-angularmaterial2)
+- [https://github.com/rockem/mongo-express-a2-node-ts2](https://github.com/rockem/mongo-express-a2-node-ts2)
+- [https://github.com/ramlez/Introduction-to-express.js-MongoDB-with-Typescript2](https://github.com/ramlez/Introduction-to-express.js-MongoDB-with-Typescript2)
 
 
-## Other Groups
 
-### Gulp & webpack
+
+# Other Groups
+
+----------
+
+
+## Gulp & webpack
 Links to tutorials here
 
 [https://scotch.io/tutorials/getting-started-with-webpack-module-bundling-magic](https://scotch.io/tutorials/getting-started-with-webpack-module-bundling-magic)
 
 **Docker**
+
+I need to do a Docker soon, so I have a basic handle on it. After figuring out that the Digital Ocean stuff costs money ($10 a month for a basic MEAN-stack) that I can get from Heroku free. Lets see what Docker is and if its worth it.
 
 [https://scotch.io/tutorials/create-a-mean-app-with-angular-2-and-docker-compose](https://scotch.io/tutorials/create-a-mean-app-with-angular-2-and-docker-compose)
 
@@ -72,7 +89,10 @@ Links to tutorials here
 
 [https://scotch.io/tutorials/debug-a-node-app-inside-of-visual-studio-code](https://scotch.io/tutorials/debug-a-node-app-inside-of-visual-studio-code)
 
-### Mongo & mongoose
+I hope Docker works like the magic people say it is. 
+
+
+## Mongo & mongoose
 Links to tutorials here
 
 [Object Modeling in Node with Mongoose](https://devcenter.heroku.com/articles/nodejs-mongoose) Heroku
@@ -82,12 +102,18 @@ Links to tutorials here
 [http://stackoverflow.com/questions/5747806/what-is-the-killer-reason-for-using-mongoose-orm](http://stackoverflow.com/questions/5747806/what-is-the-killer-reason-for-using-mongoose-orm)
 
 
-### CSS styling(SASS & Bootstrap, etc)
+## CSS styling(SASS & Bootstrap, etc)
 Links to tutorials here
 
 
+## Testing
 
-### Other Topics
+[TESTING ANGULAR FASTER WITH JEST](https://www.xfive.co/blog/testing-angular-faster-jest/)
+https://www.xfive.co/blog/testing-angular-faster-jest/
+
+
+
+## Other Topics
 Steps for doing GitHub push & pull requests and merges
 
 
@@ -100,7 +126,9 @@ TypeScript, debuggers, unit tests, code quality tool( SonarQube)
 
 
 
-## Series like Beer Locker, Twitatron, Node Hero
+----------
+
+# Series like Beer Locker, Twitatron, Node Hero
 
 [WTF image here]
 
@@ -108,7 +136,7 @@ TypeScript, debuggers, unit tests, code quality tool( SonarQube)
 
 Write better code
 
-### Beer Locker
+## Beer Locker
 
 1. [Beer Locker: Building a RESTful API With Node](http://scottksmith.com/blog/2014/05/02/building-restful-apis-with-node/)
 1. CRUD
@@ -119,7 +147,7 @@ Write better code
 
 
 
-### Twitatron
+## Twitatron
 
 1. [Building a Production Web App With Node](http://scottksmith.com/blog/2014/10/05/twitatron-building-a-production-web-app-with-node/)
 1. [Views & Controllers](http://scottksmith.com/blog/2015/03/23/twitatron-building-a-production-web-app-with-node-views-and-controllers/)
@@ -127,7 +155,7 @@ Write better code
 
 
 
-### Node Hero ~ part I
+## Node Hero ~ part I
 
 1. Getting started with Node.js
 1. Using NPM
@@ -143,7 +171,7 @@ Write better code
 1. How to Deploy Node.js Applications
 1. [how to do Node.js monitoring and how to find advanced issues in production environments](https://blog.risingstack.com/node-hero-monitoring-node-js-applications/). 
 
-### Node at Scale ~ part II
+## Node at Scale ~ part II
 
 - **Using npm**
 	- [npm Tricks and Best Practices](https://blog.risingstack.com/nodejs-at-scale-npm-best-practices/)
