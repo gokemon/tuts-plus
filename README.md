@@ -91,6 +91,12 @@ I need to do a Docker soon, so I have a basic handle on it. After figuring out t
 
 I hope Docker works like the magic people say it is. 
 
+![Docker](https://github.com/gokemon/tuts-plus/blob/master/images/docker-3c.png)
+
+**Digital Ocean**
+
+[How to Host a MEAN Stack App on Digital Ocean](https://scotch.io/tutorials/how-to-host-a-mean-stack-app-on-digital-ocean) Turns out this was crap. A waste of a couple of hours. The tutorial was not very helpful, out of date, and D.O. doesn't live up to being *"wonderful"*  All in a all, a very disappointing experience. 
+
 
 ## Mongo & mongoose
 Links to tutorials here
@@ -117,7 +123,6 @@ https://www.xfive.co/blog/testing-angular-faster-jest/
 Steps for doing GitHub push & pull requests and merges
 
 
-[How to Host a MEAN Stack App on Digital Ocean](https://scotch.io/tutorials/how-to-host-a-mean-stack-app-on-digital-ocean)
 
 [OctoPerf ~ REST API USING NODE](https://octoperf.com/blog/2015/09/10/nodejs-express-typescript/)
 TypeScript, debuggers, unit tests, code quality tool( SonarQube)
