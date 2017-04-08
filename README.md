@@ -26,6 +26,13 @@ This is the conman / ContactList repos
 [PostgreSQL and NodeJS](http://mherman.org/blog/2015/02/12/postgresql-and-nodejs/#.WNvZB28rLIV) ~ CRUD todo single page application with Node 6.6, Express 4.13, Angular 1.5, and PostgreSQL. *mherman's*
 
 
+## Express Apps
+
+There is a lot more to explore than I thought. A lot of middleware package to look through and figure out.
+
+[Build a Complete MVC Website With ExpressJS](https://code.tutsplus.com/tutorials/build-a-complete-mvc-website-with-expressjs--net-34168) *<a little older, but seems to work>*
+
+
 
 ## Angular 2 ![****](https://github.com/gokemon/tuts-plus/blob/master/images/A2-small.jpg)
 Links to Angular 2 tutorials here
@@ -84,6 +91,7 @@ Links to tutorials here
 I need to do a Docker soon, so I have a basic handle on it. After figuring out that the Digital Ocean stuff costs money ($10 a month for a basic MEAN-stack) that I can get from Heroku free. Lets see what Docker is and if its worth it.
 
 [https://scotch.io/tutorials/create-a-mean-app-with-angular-2-and-docker-compose](https://scotch.io/tutorials/create-a-mean-app-with-angular-2-and-docker-compose)
+ <4/5/17>
 
 [https://scotch.io/tutorials/debugging-angular-2-apps-with-augury](https://scotch.io/tutorials/debugging-angular-2-apps-with-augury)
 
@@ -92,6 +100,26 @@ I need to do a Docker soon, so I have a basic handle on it. After figuring out t
 I hope Docker works like the magic people say it is. 
 
 ![Docker](https://github.com/gokemon/tuts-plus/blob/master/images/docker-3c.png)
+
+<4/5> Was having a challenge wrapping my mind around the Dockerfile, so;
+ 
+[***Docker Tutorial Series***](https://rominirani.com/docker-tutorial-series-a7e6ff90a023)
+
+1. Installation
+1. Basic Commands
+1. More on Images and Containers
+1. Docker Hub
+1. Building your own Docker Images
+1. Docker Private Registry
+1. Data Volumes
+1. [Linking Containers](https://rominirani.com/docker-tutorial-series-part-8-linking-containers-69a4e5bf50fb)
+1. [Writing a Dockerfile](https://rominirani.com/docker-tutorial-series-writing-a-dockerfile-ce5746617cd)
+1. Writing a Dockerfile
+1. Docker Swarm Tutorial
+1. Docker Swarm on Google Compute Engine
+1. Getting Started with Kubernetes using Minikube
+1. Docker Management Commands
+
 
 **Digital Ocean**
 

@@ -17,7 +17,9 @@ This is the conman / ContactList repos
 [Learn to Build Modern Web Apps with MEAN](https://thinkster.io/tutorials/mean-stack) This is the 14-part Thinkster that builds the reddit clone
 
 
-
+## Express
+Real Time Chat With NodeJS, Socket.io and ExpressJS
+https://code.tutsplus.com/tutorials/real-time-chat-with-nodejs-socketio-and-expressjs--net-31708
 
 
 
