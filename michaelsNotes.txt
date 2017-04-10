@@ -1,6 +1,60 @@
 This is Michael's Notes and links 
 
 
+
+=======================================================================
+1:10 PM Monday, April 10, 2017
+NEVER seems to be enough time in the day
+
+so this has been on my plate since last week
+https://thinkster.io/tutorials/building-real-world-angular-2-apps
+
+
+Plus on Saturday, I was working on my Weekly DesignCuts tutorial, 
+https://www.udemy.com/photoshop-tools/learn/v4/overview
+add this to my basics
+
+Also copied my favorite favicon.ico to this repo and to my \node-scripts\ folder root, so I could pull into any future project that has a favicon.ico, instead of using the generated one. 
+
+
+=> Monday, today 4/10 <=
+we started the CommissionManager, ComMan https://github.com/gokemon/ComMan
+quickly ran into the forms wall. 
+"Ya, lets build our app" OH shit, template-driven forms, or model driven forms?
+Ok back to Angular 2 forms tutorials. 
+https://scotch.io/tutorials/using-angular-2s-template-driven-forms
+https://scotch.io/tutorials/using-angular-2s-model-driven-forms-with-formgroup-and-formcontrol
+https://scotch.io/tutorials/how-to-build-nested-model-driven-forms-in-angular-2
+I think we are going to need to be building nested model driven forms
+
+but also found this one, thought I would spend an hour or two working through this one...
+https://www.barbarianmeetscoding.com/blog/2016/03/29/getting-started-with-angular-2-step-by-step-5-forms-and-validation/
+"Our Application Up Until Now.....
+At this point in time we have developed a tiny Angular 2 application to learn more about people from the StarWars universe. We have two components, the PeopleListComponent that displays a list of people and the PersonDetailsComponent that displays more information about the character that you have selected.
+We use Angular 2 routing to navigate between these two views, the list of people being our default view and the one that is rendered as soon as the application starts."
+YES< YES >YES
+I know we need to create some routes, and we need to be these two components at least. 
+PeopleListComponent,
+PersonDetailsComponent,
+     and more.....
+     
+But Jason also shared the SQL and sample data with me, so we can look through the sales commissions rules, which I think will be a 
+SalesCommissionsRulesComponent
+and which he was fiddling around with the data in his SQL server tool, he figured out how to extract the data as JSON data. OK good.
+and I found Building Angular2 Apps with SQL Server Data
+http://www.sqlservercentral.com/articles/AngularJS/152308/
+from 02/08/2017 so pretty new.
+And no matter what we do, since the Angular2 Web app and API Server could be on different domains, then Angular2 will generate cross-domain requests. This means that CORS (cross-origin resource sharing) must be enabled on any servers queried by Angular2 Web apps. 
+AND we need to add some serouious authentication to the front-end and back-end application, right off the bat. 
+
+SO, on top of learning forms, and how to play around with the data, I need to update my Angular 1 knowledge of A&A, to A&A in ng2 apps. 
+OH CRAP....
+=> Monday, today 4/10 <=
+
+
+
+=====================================================================================================
+
 ## NodeJS
 Links to Node tutorials here
 
@@ -13,47 +67,20 @@ Links to Node tutorials here
 [Create a Web App and RESTful API Server Using the MEAN Stack](https://devcenter.heroku.com/articles/mean-apps-restful-api) Heroku's ~ 
 This is the conman / ContactList repos
 
-
 [Learn to Build Modern Web Apps with MEAN](https://thinkster.io/tutorials/mean-stack) This is the 14-part Thinkster that builds the reddit clone
-
 
 ## Express
 Real Time Chat With NodeJS, Socket.io and ExpressJS
 https://code.tutsplus.com/tutorials/real-time-chat-with-nodejs-socketio-and-expressjs--net-31708
 
 
-
-## Angular 2
-Links to Angular 2 tutorials here
-
-
-
 ## TypeScript 2
 Links to TypeScript 2 tutorials here
-
 
 [Building a MEAN (MongoDB, ExpressJs, Angular and Node.js) api app using TypeScript and host it with Heroku](https://zimmergren.net/building-a-mean-mongodb-expressjs-angular-and-node-js-api-app-using-typescript-and-host-it-with-heroku/) Zimmergren's 
 
 
 [Developing a superhero-api with Node, Express and TypeScript2](http://mherman.org/blog/2016/11/05/developing-a-restful-api-with-node-and-typescript/#.WNvUZG8rLIU) Michael Herman's
-
-
-## Other Groups
-
-### Gulp & webpack
-Links to tutorials here
-
-### Mongo & mongoose
-Links to tutorials here
-
-
-### CSS styling(SASS & Bootstrap, etc)
-Links to tutorials here
-
-
-
-### Other Topics
-Steps for doing GitHub push & pull requests and merges
 
 
 
