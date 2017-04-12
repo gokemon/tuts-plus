@@ -1,1 +1,14 @@
 This is Jason's Notes and links 
+
+
+4/6
+https://scotch.io/tutorials/create-a-mean-app-with-angular-2-and-docker-compose
+https://github.com/mrjbj/DockerMEAN
+
+4/8
+https://egghead.io/courses/angular-2-fundamentals
+https://github.com/mrjbj/angular2-fundamentals
+
+4/11
+https://coursetro.com/posts/code/29/Working-with-Angular-2-Material
+https://github.com/mrjbj/angular-material-playground

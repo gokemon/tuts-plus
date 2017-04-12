@@ -73,6 +73,12 @@ Here is my [repo for the TS2, Express and Node app](https://github.com/gokemon/h
 - [https://github.com/rockem/mongo-express-a2-node-ts2](https://github.com/rockem/mongo-express-a2-node-ts2)
 - [https://github.com/ramlez/Introduction-to-express.js-MongoDB-with-Typescript2](https://github.com/ramlez/Introduction-to-express.js-MongoDB-with-Typescript2)
 
+#### John Papa's TypeScript2 blogs (4/11)
+- Part 1 Getting Started with TypeScript
+- Part 2 TypeScript Grammar
+- Part 3 [TypeScript Classes and Interfaces](https://johnpapa.net/typescriptpost3/)
+- Part 4 Modules
+
 
 
 
