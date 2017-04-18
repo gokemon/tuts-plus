@@ -41,6 +41,8 @@ Links to Angular 2 tutorials here
 
 [https://scotch.io/tutorials/interactive-angular-2-charts-with-zingchart](https://scotch.io/tutorials/interactive-angular-2-charts-with-zingchart)
 
+Something to ponder [How to Handle File Uploads in Angular2](https://scotch.io/tutorials/file-uploads-in-angular-with-a-node-and-hapi-backend) (4/18/17)
+
 
 
 ## TypeScript 2 ![TypeScript 2](https://github.com/gokemon/tuts-plus/blob/master/images/TS2-small.png)
