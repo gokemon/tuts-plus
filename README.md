@@ -43,6 +43,10 @@ Links to Angular 2 tutorials here
 
 Something to ponder [How to Handle File Uploads in Angular2](https://scotch.io/tutorials/file-uploads-in-angular-with-a-node-and-hapi-backend) (4/18/17)
 
+[Angular 2 Bootstrap 4 components](https://ng-bootstrap.github.io/#/home), powered by Angular, written by angular-ui folks (4/18/17)
+
+[Angular Style Guide](https://angular.io/docs/ts/latest/guide/style-guide.html) (4/19/17)
+
 
 
 ## TypeScript 2 ![TypeScript 2](https://github.com/gokemon/tuts-plus/blob/master/images/TS2-small.png)
@@ -147,6 +151,8 @@ Links to tutorials here
 ## CSS styling(SASS & Bootstrap, etc)
 Links to tutorials here
 
+[Angular Material 1x](https://material.angularjs.org/latest/) (4/19/17)
+
 
 ## Testing
 
@@ -157,6 +163,8 @@ https://www.xfive.co/blog/testing-angular-faster-jest/
 
 ## Other Topics
 Steps for doing GitHub push & pull requests and merges
+
+[Visual Studio documentation](https://code.visualstudio.com/docs) (4/19/17)
 
 
 
