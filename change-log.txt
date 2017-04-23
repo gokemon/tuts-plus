@@ -1,0 +1,9 @@
+
+
+Change Log
+
+Added 
+Wednesday, April 19, 2017
+Heroku SSL Dev Center - Automated Certificate Management
+https://devcenter.heroku.com/articles/automated-certificate-management
+to ## Other Topics section

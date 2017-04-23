@@ -164,11 +164,14 @@ https://www.xfive.co/blog/testing-angular-faster-jest/
 ## Other Topics
 Steps for doing GitHub push & pull requests and merges
 
-[Visual Studio documentation](https://code.visualstudio.com/docs) (4/19/17)
+
+- [Visual Studio documentation](https://code.visualstudio.com/docs) (4/19/17)
+
+- [Heroku SSL Dev Center - Automated Certificate Management](https://devcenter.heroku.com/articles/automated-certificate-management) (4/19/17) ***For adding Lets Encrypt SSL's to our site apps. ***
 
 
 
-[OctoPerf ~ REST API USING NODE](https://octoperf.com/blog/2015/09/10/nodejs-express-typescript/)
+- [OctoPerf ~ REST API USING NODE](https://octoperf.com/blog/2015/09/10/nodejs-express-typescript/)
 TypeScript, debuggers, unit tests, code quality tool( SonarQube)
 ***This guy writes from a JAVA mindset***
 
