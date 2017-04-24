@@ -48,7 +48,7 @@ Something to ponder [How to Handle File Uploads in Angular2](https://scotch.io/t
 
 [Angular Style Guide](https://angular.io/docs/ts/latest/guide/style-guide.html) (4/19/17)
 
-Angular 2 Routing (1/23/17)
+[Angular 2 Routing](https://github.com/gokemon/tuts-plus/blob/master/Angular2Routing.MD) (1/23/17)
 
 
 

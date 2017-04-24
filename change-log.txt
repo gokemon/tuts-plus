@@ -6,6 +6,7 @@ Added
 Sunday, April 23, 2017
 Created a Angular 2 Routing page, and inserted into the main readme
 Angular2Routing.MD
+https://github.com/gokemon/tuts-plus/blob/master/Angular2Routing.MD
 
 
 Added 

@@ -2,6 +2,8 @@
 # Angular 2 Routing #
 Added 4/23/17
 
+![](https://github.com/gokemon/tuts-plus/blob/master/images/ComponentRouter.png)
+
 
 [Getting Started With Angular 2 Step by Step: 4 - Routing](https://www.barbarianmeetscoding.com/blog/2016/03/28/getting-started-with-angular-2-step-by-step-4-routing/) (Barbarian Meets Coding)
 
@@ -19,5 +21,5 @@ Added 4/23/17
 
 [ROUTING IN ANGULAR REVISITED](https://blog.thoughtram.io/angular/2016/06/14/routing-in-angular-2-revisited.html) (thoughtram.io) 
 
-![](http://thoughtram.io/assets/images/thoughtram-brain-white.png)
+
 
