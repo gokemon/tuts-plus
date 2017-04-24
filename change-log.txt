@@ -2,6 +2,12 @@
 
 Change Log
 
+Added
+Sunday, April 23, 2017
+Created a Angular 2 Routing page, and inserted into the main readme
+Angular2Routing.MD
+
+
 Added 
 Wednesday, April 19, 2017
 Heroku SSL Dev Center - Automated Certificate Management

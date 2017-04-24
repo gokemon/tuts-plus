@@ -9,6 +9,7 @@ This readme will serve as our "shared" location for Learning Resources.
 OK, so I have some clean up on which ones we have done, and when, and which we have not.
 
 https://leanpub.com/mean-machine
+Added a ChangeLog (420)
 
 ## NodeJS ![NodeJS](https://github.com/gokemon/tuts-plus/blob/master/images/Node-small.png) 
 Links to Node tutorials here
@@ -46,6 +47,8 @@ Something to ponder [How to Handle File Uploads in Angular2](https://scotch.io/t
 [Angular 2 Bootstrap 4 components](https://ng-bootstrap.github.io/#/home), powered by Angular, written by angular-ui folks (4/18/17)
 
 [Angular Style Guide](https://angular.io/docs/ts/latest/guide/style-guide.html) (4/19/17)
+
+Angular 2 Routing (1/23/17)
 
 
 
