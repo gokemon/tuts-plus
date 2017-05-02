@@ -3,6 +3,17 @@ This is Michael's Notes and links
 
 
 =======================================================================
+1:10 PM Monday, May 01, 2017
+http://blog.angular-university.io/angular-2-router-nested-routes-and-nested-auxiliary-routes-build-a-menu-navigation-system/
+https://gist.github.com/angular-academy-devs/a07ec9690d06d7b9b62303b6593f3f5f
+
+=======================================================================
+1:13 PM Friday, April 28, 2017
+https://github.com/codeschool/WatchUsBuild-SimpleNodeAppWithDocker
+
+https://www.codeschool.com/courses/try-docker
+
+=======================================================================
 1:10 PM Monday, April 10, 2017
 NEVER seems to be enough time in the day
 

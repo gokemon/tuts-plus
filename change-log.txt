@@ -3,6 +3,12 @@
 Change Log
 
 Added
+Monday, May 01, 2017
+A ReadMe for Testing Angular with Jasmine
+some notes to Michael's notes
+
+
+Added
 Sunday, April 23, 2017
 Created a Angular 2 Routing page, and inserted into the main readme
 Angular2Routing.MD
