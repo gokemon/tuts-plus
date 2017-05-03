@@ -103,6 +103,8 @@ Links to tutorials here
 
 **Docker**
 
+![](https://github.com/gokemon/tuts-plus/blob/master/images/Using%20Docker-bookcover.jpeg)
+
 I need to do a Docker soon, so I have a basic handle on it. After figuring out that the Digital Ocean stuff costs money ($10 a month for a basic MEAN-stack) that I can get from Heroku free. Lets see what Docker is and if its worth it.
 
 [https://scotch.io/tutorials/create-a-mean-app-with-angular-2-and-docker-compose](https://scotch.io/tutorials/create-a-mean-app-with-angular-2-and-docker-compose)

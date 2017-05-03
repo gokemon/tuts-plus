@@ -6,8 +6,6 @@ https://scotch.io/tutorials/testing-angularjs-with-jasmine-and-karma-part-1
 
 ![JasmineTesting](https://github.com/gokemon/tuts-plus/blob/master/images/TestingAdder-with-Jasmine.jpeg) 
 
-http://www.bradoncode.com/tutorials/angularjs-unit-testing/ (15)
-
 
 Unit Testing Best Practices in AngularJS
 http://andyshora.com/unit-testing-best-practices-angularjs.html
@@ -32,5 +30,15 @@ https://www.stackchief.com/tutorials/Testing%20AngularJS%20with%20Jasmine%20%26%
 - Angular Scope
 
 https://github.com/angular/angular-seed/blob/master/karma.conf.js
+
+## Older stuff ##
+
+- http://www.bradoncode.com/tutorials/angularjs-unit-testing/ (15)
+- *Funny enough even though his stuff is older (2015) its still the most detailed about testing I have seen.*
+- http://www.bradoncode.com/blog/2015/05/05/on-reaching-50-posts/
+- http://www.bradoncode.com/blog/2015/05/17/angularjs-testing-controller/
+
+a last note... wow, a lot of my angular stuff from 2016 was crap@!
+
 
 
