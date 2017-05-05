@@ -8,6 +8,13 @@ So partly is about merge "code" branches in Git and GitHub across people, as wel
 This readme will serve as our "shared" location for Learning Resources.
 OK, so I have some clean up on which ones we have done, and when, and which we have not.
 
+Check out these other Readmes I have;
+
+- [Angular2 Routing](https://github.com/gokemon/tuts-plus/blob/master/Angular2Routing.MD)
+- [Angular Testing with Jasmine](https://github.com/gokemon/tuts-plus/blob/master/AngularTesting-Jasmine.md)
+- [MongoDB](https://github.com/gokemon/tuts-plus/blob/master/mongodb.md)
+
+
 https://leanpub.com/mean-machine
 Added a ChangeLog (420)
 
