@@ -57,6 +57,8 @@ Something to ponder [How to Handle File Uploads in Angular2](https://scotch.io/t
 
 [Angular 2 Routing](https://github.com/gokemon/tuts-plus/blob/master/Angular2Routing.MD) (1/23/17)
 
+[How to create (and use) custom components with Angular 2](http://www.gistia.com/create-use-custom-components-angular-2/) (5/6/17)
+
 
 
 ## TypeScript 2 ![TypeScript 2](https://github.com/gokemon/tuts-plus/blob/master/images/TS2-small.png)
@@ -105,6 +107,10 @@ Here is my [repo for the TS2, Express and Node app](https://github.com/gokemon/h
 
 ## Gulp & webpack
 Links to tutorials here
+
+[Automatically deploy your ng-cli project to gh-pages](https://www.npmjs.com/package/ng-deploy-gh-pages) (5/5/17)
+ 
+
 
 [https://scotch.io/tutorials/getting-started-with-webpack-module-bundling-magic](https://scotch.io/tutorials/getting-started-with-webpack-module-bundling-magic)
 
@@ -164,6 +170,11 @@ Links to tutorials here
 Links to tutorials here
 
 [Angular Material 1x](https://material.angularjs.org/latest/) (4/19/17)
+
+
+
+[Use Bootstrap SASS with Angular CLI](http://shermandigital.com/blog/bootstrap-sass-with-angular-cli/) (5/6/17)
+
 
 
 ## Testing

@@ -3,6 +3,11 @@
 Change Log
 
 Added
+[How to create (and use) custom components with Angular 2]( http://www.gistia.com/create-use-custom-components-angular-2/) (5/6/17)
+[Automatically deploy your ng-cli project to gh-pages]( https://www.npmjs.com/package/ng-deploy-gh-pages) (5/5/17)
+[Use Bootstrap SASS with Angular CLI]( http://shermandigital.com/blog/bootstrap-sass-with-angular-cli/) (5/6/17)
+
+Added
 Monday, May 01, 2017
 A ReadMe for Testing Angular with Jasmine
 some notes to Michael's notes

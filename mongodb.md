@@ -6,3 +6,4 @@
 
  
 What are the best resources?
+https://resources.mongodb.com/getting-started-with-mongodb
