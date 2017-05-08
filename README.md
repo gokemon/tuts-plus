@@ -187,6 +187,9 @@ https://www.xfive.co/blog/testing-angular-faster-jest/
 ## Other Topics
 Steps for doing GitHub push & pull requests and merges
 
+[Adding an existing Git repo to GitHub using the command line](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)  (5/7/17)
+
+
 
 - [Visual Studio documentation](https://code.visualstudio.com/docs) (4/19/17)
 
