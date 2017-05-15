@@ -33,6 +33,9 @@ This is the conman / ContactList repos
 
 [PostgreSQL and NodeJS](http://mherman.org/blog/2015/02/12/postgresql-and-nodejs/#.WNvZB28rLIV) ~ CRUD todo single page application with Node 6.6, Express 4.13, Angular 1.5, and PostgreSQL. *mherman's*
 
+[How to Debug Node.js with the Best Tools Available](https://blog.risingstack.com/how-to-debug-nodej-js-with-the-best-tools-available/) (5/1/17)
+
+
 
 ## Express Apps
 
@@ -40,6 +43,8 @@ There is a lot more to explore than I thought. A lot of middleware package to lo
 
 [Build a Complete MVC Website With ExpressJS](https://code.tutsplus.com/tutorials/build-a-complete-mvc-website-with-expressjs--net-34168) *<a little older, but seems to work>*
 
+
+----------
 
 
 ## Angular 2 ![****](https://github.com/gokemon/tuts-plus/blob/master/images/A2-small.jpg)
@@ -59,7 +64,15 @@ Something to ponder [How to Handle File Uploads in Angular2](https://scotch.io/t
 
 [How to create (and use) custom components with Angular 2](http://www.gistia.com/create-use-custom-components-angular-2/) (5/6/17)
 
+### Going Forward
+Future Angular 2 Links will be added to these readme files.
 
+- [Angular2Components](https://github.com/gokemon/tuts-plus/blob/master/Angular2Components.md) 
+- [Angular2Routing](https://github.com/gokemon/tuts-plus/blob/master/Angular2Routing.md) 
+- [AngularTesting-Jasmine](https://github.com/gokemon/tuts-plus/blob/master/AngularTesting-Jasmine.md)
+
+
+----------
 
 ## TypeScript 2 ![TypeScript 2](https://github.com/gokemon/tuts-plus/blob/master/images/TS2-small.png)
 **Links to TypeScript 2 tutorials here.** *I want more TS2 learning material, like doing all this stuff, but only coding in TS2, so I can learn it better than plain JS.*
@@ -82,7 +95,7 @@ Here is my [repo for the TS2, Express and Node app](https://github.com/gokemon/h
 
 [https://angular-university.io/course/typescript-2-tutorial](https://angular-university.io/course/typescript-2-tutorial)
 
-#### Other TypeScript2 repos (4/4)
+### Other TypeScript2 repos (4/4)
 
 - [https://github.com/spock123/angular2-webpack2-typescript2](https://github.com/spock123/angular2-webpack2-typescript2)
 - [https://github.com/willemliu/typescript2-karma-jasmine-jquery-requirejs](https://github.com/willemliu/typescript2-karma-jasmine-jquery-requirejs)
@@ -91,7 +104,8 @@ Here is my [repo for the TS2, Express and Node app](https://github.com/gokemon/h
 - [https://github.com/rockem/mongo-express-a2-node-ts2](https://github.com/rockem/mongo-express-a2-node-ts2)
 - [https://github.com/ramlez/Introduction-to-express.js-MongoDB-with-Typescript2](https://github.com/ramlez/Introduction-to-express.js-MongoDB-with-Typescript2)
 
-#### John Papa's TypeScript2 blogs (4/11)
+
+## John Papa's TypeScript2 blogs (4/11)
 - Part 1 Getting Started with TypeScript
 - Part 2 TypeScript Grammar
 - Part 3 [TypeScript Classes and Interfaces](https://johnpapa.net/typescriptpost3/)
@@ -188,6 +202,10 @@ https://www.xfive.co/blog/testing-angular-faster-jest/
 Steps for doing GitHub push & pull requests and merges
 
 [Adding an existing Git repo to GitHub using the command line](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)  (5/7/17)
+
+*[Tagging Steps](http://alblue.bandlem.com/2011/04/git-tip-of-week-tags.html)* (5/9/17) 
+
+***I should consider moving my git commands section to its own ReadMe.***
 
 
 
