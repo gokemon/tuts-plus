@@ -1,4 +1,6 @@
 # tuts-plus
+![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/angular-long.png)![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/git-short.png)![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/github-short.png) ![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/node-long.png)![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/bootstrap-short.png)![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/sass-short.png)
+
 A learning resource 
 
 There is not going to be any code in this repo, merely this readme and people notes.

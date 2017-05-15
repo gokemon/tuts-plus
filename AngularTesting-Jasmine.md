@@ -1,5 +1,6 @@
 
 # Angular Testing with Jasmine #
+![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/angular-long.png)![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/jasmine-short.png)![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/karma-short.png)
 
 ## And others ##
 https://scotch.io/tutorials/testing-angularjs-with-jasmine-and-karma-part-1

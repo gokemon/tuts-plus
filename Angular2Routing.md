@@ -1,5 +1,7 @@
 
 # Angular 2 Routing #
+![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/angular-long.png)![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/git-short.png)![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/github-short.png)
+
 Added 4/23/17
 
 ![](https://github.com/gokemon/tuts-plus/blob/master/images/ComponentRouter.png)
