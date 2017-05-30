@@ -1,5 +1,5 @@
 # tuts-plus
-![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/angular-long.png)![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/git-short.png)![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/github-short.png) ![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/node-long.png)![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/bootstrap-short.png)![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/sass-short.png)
+![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/angular-long.png) ![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/node-long.png) ![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/git-short.png) ![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/github-short.png)  ![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/bootstrap-short.png) ![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/sass-short.png)
 
 A learning resource 
 
@@ -206,6 +206,9 @@ Steps for doing GitHub push & pull requests and merges
 [Adding an existing Git repo to GitHub using the command line](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)  (5/7/17)
 
 *[Tagging Steps](http://alblue.bandlem.com/2011/04/git-tip-of-week-tags.html)* (5/9/17) 
+
+[Top Visual Studio Code Extensions- 50 Powerful Tools to Make Visual Studio Even More Useful](https://stackify.com/top-visual-studio-code-extensions/)
+
 
 ***I should consider moving my git commands section to its own ReadMe.***
 

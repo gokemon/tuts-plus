@@ -1,6 +1,6 @@
 
 # Angular 2 Routing #
-![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/angular-long.png)![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/git-short.png)![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/github-short.png)
+![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/angular-long.png) ![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/git-short.png) ![](https://github.com/gokemon/tuts-plus/blob/master/images/builtWith/github-short.png)
 
 Added 4/23/17
 
@@ -22,6 +22,20 @@ Added 4/23/17
 [Introduction to Angular Routing](https://coryrylan.com/blog/introduction-to-angular-routing)
 
 [ROUTING IN ANGULAR REVISITED](https://blog.thoughtram.io/angular/2016/06/14/routing-in-angular-2-revisited.html) (thoughtram.io) 
+
+----------
+
+![](https://github.com/gokemon/tuts-plus/blob/master/images/Auth0-badge.png)[Angular 2 Authentication Tutorial](https://auth0.com/blog/angular-2-authentication/)
+
+
+
+By Deborah Kurata
+
+- [Angular 2: Getting Started](https://app.pluralsight.com/library/courses/angular-2-getting-started-update/table-of-contents)
+
+- [Angular 2: Routing](https://app.pluralsight.com/library/courses/angular-routing)
+
+- [Angular 2: Reactive Forms](https://app.pluralsight.com/library/courses/angular-2-reactive-forms)
 
 
 

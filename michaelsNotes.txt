@@ -100,5 +100,12 @@ https://www.sitepoint.com/d3-js-data-visualizations/
 "There are only three JavaScript libraries that I would suggest every web developer should learn: jQuery, Underscore and D3."
 https://www.sitepoint.com/20-docs-guides-front-end-developers-10/
 
+=======================
+Notes about Ansible
+https://serversforhackers.com/an-ansible-tutorial
+http://docs.ansible.com/ansible/intro_getting_started.html
+Ansible is an IT automation tool. It can configure systems, deploy software, and orchestrate more advanced IT tasks such as continuous deployments or zero downtime rolling updates.
+http://docs.ansible.com/ansible/
+
 
 
