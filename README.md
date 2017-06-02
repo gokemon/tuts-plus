@@ -130,6 +130,8 @@ Links to tutorials here
 
 [https://scotch.io/tutorials/getting-started-with-webpack-module-bundling-magic](https://scotch.io/tutorials/getting-started-with-webpack-module-bundling-magic)
 
+https://johnpapa.net/my-recommended-brackets-extensions/
+
 **Docker**
 
 ![](https://github.com/gokemon/tuts-plus/blob/master/images/Using%20Docker-bookcover.jpeg)
