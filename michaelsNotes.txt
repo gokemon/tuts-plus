@@ -1,6 +1,20 @@
 This is Michael's Notes and links 
 
 
+11:18 PM Saturday, June 03, 2017
+Tutorials Don’t Tell You How to Approach Projects
+https://www.sitepoint.com/how-to-approach-javascript-projects-what-the-tutorials-dont-tell-you/
+
+Customizing Bootstrap Icons using Gulp
+https://www.sitepoint.com/customizing-bootstrap-icons-using-gulp/
+
+Bootstrap Cards Made Easy
+https://www.sitepoint.com/introducing-bootcards-bootstrap-cards-made-easy/
+
+https://ng-bootstrap.github.io/#/home
+
+
+
 https://www.sitepoint.com/how-to-boost-usability-with-intelligent-color-choices/
 =======================================================================
 1:10 PM Monday, May 01, 2017
