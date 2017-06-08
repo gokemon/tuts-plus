@@ -19,3 +19,5 @@ After doing that and the Angular 2 Getting Started video, then
 Professional Grade Angular UI Components
 
 https://colorlib.com/wp/angular-2-components/
+
+https://moz.com/blog/optimizing-angularjs-single-page-applications-googlebot-crawlers
