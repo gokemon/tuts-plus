@@ -1,6 +1,15 @@
 This is Michael's Notes and links 
 
 
+=======================
+11:06 PM Friday, June 16, 2017
+Adding some of my WDI exercises to the bottom of this
+=======================
+
+9:09 PM Sunday, June 11, 2017
+https://www.quora.com/What-criteria-do-tech-companies-look-for-in-a-jr-web-developer/
+
+============================
 11:18 PM Saturday, June 03, 2017
 Tutorials Don’t Tell You How to Approach Projects
 https://www.sitepoint.com/how-to-approach-javascript-projects-what-the-tutorials-dont-tell-you/
@@ -120,6 +129,19 @@ https://serversforhackers.com/an-ansible-tutorial
 http://docs.ansible.com/ansible/intro_getting_started.html
 Ansible is an IT automation tool. It can configure systems, deploy software, and orchestrate more advanced IT tasks such as continuous deployments or zero downtime rolling updates.
 http://docs.ansible.com/ansible/
+
+=======================
+=======================
+
+https://github.com/ga-wdi-exercises/whenpresident
+https://github.com/ga-wdi-lessons/rails-api
+https://github.com/ga-wdi-lessons/angular-intro
+https://github.com/ga-wdi-lessons/building-a-mean-app
+https://github.com/ga-wdi-lessons/building-a-mean-app/blob/master/angular-walkthrough-annotated.md
+
+https://thinkster.io/tutorials/mean-stack
+
+https://github.com/ATL-WDI-Exercises/fashion-blog/tree/solution
 
 
 
