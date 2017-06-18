@@ -2,6 +2,8 @@
 # Michael's Steps to Git and GitHub #
 
 
+deploy to gh-pages is below
+
 ----------
 
 
@@ -77,6 +79,12 @@ If you'd like to fetch them all, you can do git fetch --tags to pull them all in
 ======================================
 
 also
-the deploy to gh-pages thing is somewhere
+the **deploy to gh-pages** thing is somewhere
+
+- git checkout gh-pages
+- git merge master
+- git push origin gh-pages
+- git checkout master
+
 
 ----------
