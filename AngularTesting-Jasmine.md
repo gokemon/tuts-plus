@@ -41,5 +41,19 @@ https://github.com/angular/angular-seed/blob/master/karma.conf.js
 
 a last note... wow, a lot of my angular stuff from 2016 was crap@!
 
+## Angular 2 Interviewing ##
+
+[Angularjs 2 Interview Questions](http://www.webdevelopmenthelp.net/2016/12/angularjs2-interview-questions.html)
 
 
+## AngularJS Assessments ##
+
+w3schools.com's [AngularJS Tutorial](https://www.w3schools.com/angular/default.asp)
+
+- Interview Mocha's [AngularJS Online Skills Assessment TestBasic Level](https://www.interviewmocha.com/tests/AngularJS-test) 
+- Code Project's [AngularJS Interview Questions and Answers](https://www.codeproject.com/Articles/891718/AngularJS-Interview-Questions-and-Answers)
+- [11 Essential AngularJS Interview Questions](https://www.toptal.com/angular-js/interview-questions) 
+- [AngularJS Online Test](http://www.withoutbook.com/OnlineTestStart.php?quizId=95&quiz=AngularJS%20Online%20Practice%20Test%20%7C%20Online%20Exam)
+- TutorialsPoint [AngularJS Online Quiz](https://www.tutorialspoint.com/angularjs/angularjs_online_quiz.htm)
+- Tutorials Teacher's [AngularJS Test](http://www.tutorialsteacher.com/online-test/angularjs-test)
+- [And this](http://www.dotnetfunda.com/Interviews/InterviewTest.aspx?cid=225)
