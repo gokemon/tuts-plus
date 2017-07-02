@@ -31,17 +31,38 @@ Rick is the principal consultant at Arborian Consulting, LLC, where he specializ
 
 # MEN API's #
 
-June 7, 17
+**July 1, 17**
+
+[Build Node.js RESTful APIs in 10 Minutes](https://www.codementor.io/olatundegaruba/nodejs-restful-apis-in-10-minutes-q0sgsfhbd)
+
+Boilerplate code for setting up a simple [node.js RESTful API](https://github.com/sslover/node-express-api-boilerplate) app using: the express.js framework, a MongoDb database (with the help of Mongoose), and hosting it on Heroku with some steps
+
+[Simple RESTful JSON api for a bookstore using Nodejs, Express and MongoDB](https://github.com/bradtraversy/bookstore)
+
+[RESTful API design with Node](https://hackernoon.com/restful-api-design-with-node-js-26ccf66eab09)
+
+[Building a Simple CRUD Application with Express and MongoDB](https://zellwk.com/blog/crud-express-mongodb/)
+
+[Refactoring a Basic, Authenticated API with Node, Express, and Mongo](http://blog.slatepeak.com/refactoring-a-basic-authenticated-api-with-node-express-and-mongo/) based off of this one
+
+[Creating a Simple Node Express API Authentication System with Passport and JWT](http://blog.slatepeak.com/creating-a-simple-node-express-api-authentication-system-with-passport-and-jwt/)
+
+
+**June 7, 17**
 [Adding a ToDo back-end API using Node Express and Mongo](http://todobackend.com/index.html) (MEN)
 [http://todobackend.com/index.html](http://todobackend.com/index.html)
 
 
-June 23, 17
+**June 23, 17**
 https://github.com/ramlez/Introduction-to-express.js-MongoDB-with-Typescript2
 [Build a Node.js API in Under 30 Minutes](https://medium.freecodecamp.com/building-a-simple-node-js-api-in-under-30-minutes-a07ea9e390d2) Looks promising
 
 
 [Introduction-to-express.js-MongoDB-with-Typescript2](https://github.com/ramlez/Introduction-to-express.js-MongoDB-with-Typescript2) Looks easy enough, but no tutorial, just pick apart the code. But I really want to use TypeScript to tighten up my skills. 
+
+
+
+
 
 **MongoDB University MongoPop series** 
 

@@ -1,0 +1,78 @@
+
+ng-init directive can be used to put values to the variables to be used in the application
+
+AngularJS bootstraps itself during config phase
+
+constants are used to pass values at config phase
+
+ng-app directive defines and links an AngularJS application to HTML
+
+
+Templates can be a single file or multiple views in one page
+Templates are not the rendered view with information from the controller and model. They are merely a template, the model passes the data and the controller merges to generate the actuall page.
+
+$invalid flag states that value has been changed
+$dirty and $invalid flags are used to do the form validations
+
+novalidate with a form declaration disables any browser specific validation
+
+Filters select a subset of items from an array and return a new array
+lowercase and all filters are applied to an expression using pipe | character {{ expression | filter }}
+orderby filter orders the array based on provided criteria
+
+Expressions are used to bind application data to html.
+Expressions behave in same way as ng-bind directives.
+
+ng-hide directive can hide a given control
+ng-show directive can show a given control
+You can embed HTML pages within a HTML page using ng-include directive
+
+AJS  is extensible
+
+To do graphical charts we need third party JS libraries.
+
+
+service method is used to create a service whose purpose is to do some defined task.
+
+Inbuilt services are always prefixed with $ symbol.
+
+
+ng-controller directive:
+Scope act as interaction between controller and view
+Scope contains the model data.
+A controller is a JavaScript object containing attributes/properties and functions.
+AJS application mainly relies on controllers to control the flow of data in the application.
+ ng-controller directive tells AJS what controller to use with this view.
+
+Each controller accepts $scope as a parameter which refers to the application/module that controller is to control.
+
+ng-model, ng-app, ng-bind are core directives
+ng-state is not
+
+CSS components, Attributes components, and Element directives components can all be used to create a custom directive
+
+
+MVC is software design pattern, which SPA's are created
+
+The Model available in $rootScope can be overridden by its all child scopes
+Scope act as interaction between controller and view
+
+In controllers, model data is accessible via $scope object
+
+AJS uses two way data binding
+
+ angular.module is primarily used to create application module.  	angular.module(...);
+angular.module is used to create AngularJS modules along with its dependent modules.
+
+Application Module components can be injected as a dependency in AJS
+
+$routeProvider attaches a controller with the view.
+$routeProvider maps Urls with the corresponding html page or ng-template.
+$routeProvider is the key service which set the configuration of urls.
+
+
+
+ corresponding js is used with Internationalization
+ 
+ Applications written in AngularJS are not inherently safe and secure.
+AJS code can be unit tested

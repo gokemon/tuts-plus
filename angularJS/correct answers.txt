@@ -1,0 +1,241 @@
+correct answers
+
+
+
+NgClass  dynamically sets a CSS class on an HTML element with Angular
+
+The model data in controllers can be accessed by $scope object
+
+Services are singletons and are are lazily instantiated 
+
+The Child controller inherits scope of parent controller 
+
+
+#8 Basic
+Our constructor has optional parameters and they seem to mess with the established way of doing Dependency injection:
+
+constructor(public name:string, public age?:number, private _service:Service);
+
+Typescript doesn’t allow a non-optional parameter behind an optional one and doesn't inject the service. What will you do? 
+
+
+Candidate Answer: 
+Just add the @Optional() decorator before the constructor parameter that should only be injected if there was a provider registered.
+constructor(public name:string, @Optional() public age?:number) 
+
+====================
+@2A
+In angular certain controls are only visible to users with certain permissions. This is based on scope variables set by server API calls. When these variables are accessed through a browsers dev console, their values can be changed. Using the code below admin control popped up, is there a way to control this security breach?
+
+Code :
+angular.element($0).scope().$parent.myUserInfo.accessType = "admin"
+angular.element($0).scope().$apply() 
+Candidate Answer: Leave it as it is. The authentication always has to be made on the server side. 
+
+@3A
+You need to watch for a routeChange event in AngularJS, how will you do?  
+Candidate Answer: 
+$rooteScope.$on( "$routeChangeStart", function(event, next, current) {
+//code
+}); 
+
+@4A
+How to call a method on page load in AngularJS?  
+Candidate Answer: 
+$scope.$on('$viewContentLoaded', function() {
+//call method here
+});
+
+@5A
+An Angular app makes restful calls to the server, a service wraps up the calls to the server using a method on the service that simply returns the promise from the $http service. How can we add some additional processing on that method call?
+
+Currently in typescript:
+class BoardService {
+    private $http;
+    constructor($rootScope: IRootScope, $http: ng.IHttpService) {
+         this.$http = $http;
+    }
+    fetchBoard(id: number) {
+        return this.$http.get("/api/board/" + id);
+    }
+} 
+Candidate Answer: Make fetchBoard2 to return a promise that gets resolved once the $http promise has come back and you've manipulated the data. You do this with Angular's $q service.
+
+fetchBoard2(id: number) {
+    var deferred = $q.defer();
+    $http.get("/api/board/" + id).success(function(data) {
+        var newData = doSomething(data);
+        deferred.resolve(newData);
+    });
+    return deferred.promise;
+} 
+
+
+
+
+
+
+
+Wrong Answers below
+========================================
+Application Module that is used to initialise the Angular app is constructed like:
+Candidate Answer: varmainApp = angular.module("mainApp");
+
+
+In AngularJS, what does $location service do? 
+Candidate Answer: Provides user's location to the app based on device's GPS 
+
+
+We have an enum in one of the services. How do you suggest to share this enum when I call a method in some other service?
+
+home.factory('myService', ['$dialogs', '$resource', 
+function ($dialogs, $resource) {
+    var myEnum= {
+        val1: 0,
+        val2: 1
+    };
+    return {
+        DoSomething : function (param1) {
+            ...
+        }
+    };
+}]);
+Return enum from your factory. Angular has constants, which you can inject.
+
+
+Candidate Answer: 
+Define a constant:
+<br /> 
+app.constant(&#39;myEnum&#39;, {
+<br /> 
+&nbsp; &nbsp; &nbsp;val1: 0,
+<br /> 
+&nbsp; &nbsp; &nbsp;val2: 1
+<br /> });
+<br /> And inject it to other services:
+<br /> app.service(&#39;myService&#39;, [&#39;myEnum&#39;, function () {
+<br /> &nbsp; &nbsp; &nbsp;
+console.log(myEnum);
+<br /> }]); 
+
+
+#9 Basic
+How is it possible to start my angular module without some dependency?
+
+angular.module:
+angular.module("app", [
+'ngSanitize', 'ngAnimate', 'ui.router', 'ngMaterial',
+'ngRoute', 'ngCookies', 'NgSwitchery',
+'ngCkeditor', 'angularFileUpload',
+]); 
+
+
+#10 Basic
+How to store a data in localstorage via AngularJS? 
+Status: Wrong Answer, Candidate Answer: 
+
+angular.module('app', [
+'ngStorage'
+]).controller('Ctrl', function(
+$scope,
+$localStorage,
+$sessionStorage
+){}); 
+
+=====================
+@1A
+
+How to execute a method when ng-repeat is already finished?
+var module = angular.module('testApp', []) 
+    .directive('onFinishRender', function () { 
+    return { 
+        restrict: 'A', 
+        link: function (scope, element, attr) { 
+            if (scope.$last === true) { 
+                element.ready(function () { 
+                    console.log("calling:"+attr.onFinishRender); 
+                    // CALL ALERT() HERE! 
+                }); 
+            } 
+        } 
+    } 
+}); 
+function MyController() { 
+    $scope.arr = [1, 2, 3, 4, 5, 6]; 
+    function alert() { 
+        console.log("alert executed"); 
+    } 
+}  
+Status: Answered 
+Candidate Answer: <div ng-app="testApp" ng-controller="MyController">
+<p ng-repeat="t in ta" ng-after="alert()">{{t}}</p>
+</div> 
+
+@6A
+You need to watch service variables, what should you do? 
+Candidate Answer: app.service('myService', function($q) {
+var self = this,
+defer = $q.defer();
+this.foo = 0;
+this.observeFoo = function() {
+return defer.promise;
+}
+this.setFoo = function(foo) {
+self.foo = foo;
+defer.notify(self.foo);
+}
+}) 
+
+
+@7A
+Suppose you need an access to attributes from the directive in AngularJS, what should you do? 
+Candidate Answer: //Directive
+.directive('suLabel', function() {
+return {
+restrict: 'E',
+replace: true,
+transclude: true,
+scope: {
+title: '@tooltip'
+},
+template: '<label><a href="#" rel="tooltip" title="{{title}}" data-placement="right" ng-
+transclude></a></label>',
+link: function(scope, element, attrs) {
+element.addClass('tooltip-title');
+},
+}
+})
+//View
+<su-label tooltip="{{field.su_documentation}}">{{field.su_name}}</su-label> 
+
+
+
+
+@8A
+You need to change some part of template dynamically. Which of the following syntax is right? 
+<html data-ng-app="Apper"> 
+<head> 
+<!-- include js files --> 
+<title><!-- should changed when ng-view changes --></title> 
+</head> 
+<body> 
+</body> 
+</html> 
+Candidate Answer: myModule.factory('template', function($scope) {
+var title = 'default';
+return {
+title: function($scope) { return title; },
+setTitle: function(newTitle) { title = newTitle }
+};
+}); 
+
+
+@9A
+In our angular app, when Angular is used to consume the below REST API request, the Web Service URLs get stored in the Angular service or controller.js file. How can we stop this app from showing our password and username publicly when requested? 
+“http://mylocal.com/api/service.json?api_user=Username&api_key=Password”
+Candidate Answer: 
+Setup a back-end forwarder service to work with this API and hide the credentials on the back-end. You can do this using something like PHP, Ruby, Python, Node.JS 
+Use a supported security mechanism in the system
+
+
+
