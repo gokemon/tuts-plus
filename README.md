@@ -121,26 +121,6 @@ Here is my [repo for the TS2, Express and Node app](https://github.com/gokemon/h
 ----------
 
 
-## Gulp & webpack
-Links to tutorials here
-
-[Automatically deploy your ng-cli project to gh-pages](https://www.npmjs.com/package/ng-deploy-gh-pages) (5/5/17)
- 
-
-
-[https://scotch.io/tutorials/getting-started-with-webpack-module-bundling-magic](https://scotch.io/tutorials/getting-started-with-webpack-module-bundling-magic)
-
-https://johnpapa.net/my-recommended-brackets-extensions/
-
-**Docker**
-
-![](https://github.com/gokemon/tuts-plus/blob/master/images/Using%20Docker-bookcover.jpeg)
-
-I need to do a Docker soon, so I have a basic handle on it. After figuring out that the Digital Ocean stuff costs money ($10 a month for a basic MEAN-stack) that I can get from Heroku free. Lets see what Docker is and if its worth it.
-
-[https://scotch.io/tutorials/create-a-mean-app-with-angular-2-and-docker-compose](https://scotch.io/tutorials/create-a-mean-app-with-angular-2-and-docker-compose)
- <4/5/17>
-
 [https://scotch.io/tutorials/debugging-angular-2-apps-with-augury](https://scotch.io/tutorials/debugging-angular-2-apps-with-augury)
 
 [https://scotch.io/tutorials/debug-a-node-app-inside-of-visual-studio-code](https://scotch.io/tutorials/debug-a-node-app-inside-of-visual-studio-code)
