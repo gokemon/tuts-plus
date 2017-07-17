@@ -73,6 +73,7 @@ Future Angular 2 Links will be added to these readme files.
 - [Angular2Routing](https://github.com/gokemon/tuts-plus/blob/master/Angular2Routing.md) 
 - [AngularTesting-Jasmine](https://github.com/gokemon/tuts-plus/blob/master/AngularTesting-Jasmine.md)
 
+[ng-deploy-gh-pages](https://www.npmjs.com/package/ng-deploy-gh-pages)
 
 ----------
 

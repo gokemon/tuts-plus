@@ -1,0 +1,21 @@
+
+
+https://www.mikestreety.co.uk/blog/advanced-gulp-file
+
+https://bower.io/
+Bower is old, being replaced by Webpack for bundling stuff, or yarn for installs.
+I just prefer to use my npm stuff
+
+https://www.upwork.com/hiring/development/grunt-and-gulp-js-task-runner-tools-to-streamline-your-front-end-development/
+
+https://scotch.io/tutorials/javascript-promises-for-dummies
+
+https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261
+
+https://www.tutorialspoint.com/angular_material/angular_material_toasts.htm
+
+https://www.tutorialspoint.com/gulp/gulp_quick_guide.htm
+
+jasmine
+
+cucumber, and gerkin
