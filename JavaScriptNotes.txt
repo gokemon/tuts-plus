@@ -1,0 +1,23 @@
+
+
+https://medium.com/written-in-code/practical-uses-for-closures-c65640ae7304
+
+http://javascriptissexy.com/understand-javascript-closures-with-ease/
+
+https://www.w3schools.com/js/js_function_closures.asp
+
+https://howtonode.org/why-use-closure
+
+https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36
+
+
+Comparison operators
+Difference between == and === in JavaScript 
+https://stackoverflow.com/questions/523643/difference-between-and-in-javascript
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators
+
+What is the difference between =,==, and === in JS?
+https://www.codecademy.com/en/forum_questions/558ea4f5e39efed371000508
+
+https://www.w3schools.com/js/js_comparisons.asp
