@@ -21,3 +21,5 @@ What is the difference between =,==, and === in JS?
 https://www.codecademy.com/en/forum_questions/558ea4f5e39efed371000508
 
 https://www.w3schools.com/js/js_comparisons.asp
+
+so many tests, so little time
