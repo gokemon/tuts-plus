@@ -81,6 +81,8 @@ If you'd like to fetch them all, you can do git fetch --tags to pull them all in
 also
 the **deploy to gh-pages** thing is somewhere
 
+- git checkout origin/gh-pages -b gh-pages
+
 - git checkout gh-pages
 - git merge master
 - git push origin gh-pages
@@ -88,3 +90,8 @@ the **deploy to gh-pages** thing is somewhere
 
 
 ----------
+
+[Importing a Gist into a Repo](https://github.com/new/import)
+[
+[https://github.com/new/import](https://github.com/new/import)
+]

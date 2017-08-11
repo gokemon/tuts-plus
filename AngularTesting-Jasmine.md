@@ -57,3 +57,13 @@ w3schools.com's [AngularJS Tutorial](https://www.w3schools.com/angular/default.a
 - TutorialsPoint [AngularJS Online Quiz](https://www.tutorialspoint.com/angularjs/angularjs_online_quiz.htm)
 - Tutorials Teacher's [AngularJS Test](http://www.tutorialsteacher.com/online-test/angularjs-test)
 - [And this](http://www.dotnetfunda.com/Interviews/InterviewTest.aspx?cid=225)
+
+
+----------
+
+
+# Continuous Integration #
+
+Angular 2 : [Continuous Integration to Azure using Codeship and the Angular CLI](http://tattoocoder.com/angular2-azure-codeship-angularcli/)
+
+[Continuous Delivery To Azure With Docker](https://documentation.codeship.com/pro/continuous-deployment/azure/)
